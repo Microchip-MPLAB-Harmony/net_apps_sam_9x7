@@ -1,0 +1,14 @@
+format_version: v1.0
+configName: sam_9x75_ddr3_eb_freertos
+folderName: sam_9x75_ddr3_eb_freertos
+frameworkPath: C:\00_Repo\H3
+processor: SAM9X75
+projectName: sam_9x75_ddr3_eb_freertos
+settings:
+  PackageFilter: ''
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: dev_packs\Microchip\SAM9X7_DFP\0.0.19\atdf\SAM9X75.atdf
