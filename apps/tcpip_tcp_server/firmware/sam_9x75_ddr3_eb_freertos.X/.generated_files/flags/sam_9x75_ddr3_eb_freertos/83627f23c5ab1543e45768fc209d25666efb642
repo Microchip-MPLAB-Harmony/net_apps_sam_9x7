@@ -1,1 +1,0 @@
-$(MP_EXTRA_AS_PRE)  -c -mprocessor=$(MP_PROCESSOR_OPTION) -DXPRJ_sam_9x75_ddr3_eb_freertos=$(CND_CONF)    -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--gdwarf-2 -mdfp="${DFP_DIR}"C:\00_Repo\H3\net_apps_sam_9x7\apps\tcpip_tcp_server\firmware\src\config\sam_9x75_ddr3_eb_freertos\cstartup.S
