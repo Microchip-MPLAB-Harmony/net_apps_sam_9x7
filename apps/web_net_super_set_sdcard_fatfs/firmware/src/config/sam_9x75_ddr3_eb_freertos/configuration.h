@@ -140,7 +140,7 @@ extern "C" {
 
 
 #define SYS_CONSOLE_DEVICE_MAX_INSTANCES   			1
-#define SYS_CONSOLE_UART_MAX_INSTANCES 	   			2
+#define SYS_CONSOLE_UART_MAX_INSTANCES 	   			1
 #define SYS_CONSOLE_USB_CDC_MAX_INSTANCES 	   		0
 #define SYS_CONSOLE_PRINT_BUFFER_SIZE        		200
 
@@ -382,6 +382,16 @@ extern "C" {
 
 
 
+/*** FTPC Configuration ***/
+#define TCPIP_STACK_USE_FTP_CLIENT
+#define TCPIP_FTPC_TASK_TICK_RATE        5
+#define TCPIP_FTPC_TMO                   2
+#define TCPIP_FTPC_MAX_NUM_CLIENT        3
+#define TCPIP_FTPC_DATA_SKT_TX_BUFF_SIZE_DFLT        0
+#define TCPIP_FTPC_DATA_SKT_RX_BUFF_SIZE_DFLT        0
+#define TCPIP_FTPC_COMMANDS  
+
+
 /*** iperf Configuration ***/
 #define TCPIP_STACK_USE_IPERF
 #define TCPIP_IPERF_TX_BUFFER_SIZE		4096
@@ -392,16 +402,6 @@ extern "C" {
 #define TCPIP_IPERF_MAX_INSTANCES       1
 #define TCPIP_IPERF_TX_BW_LIMIT  		1
 
-
-
-/*** FTPC Configuration ***/
-#define TCPIP_STACK_USE_FTP_CLIENT
-#define TCPIP_FTPC_TASK_TICK_RATE        5
-#define TCPIP_FTPC_TMO                   2
-#define TCPIP_FTPC_MAX_NUM_CLIENT        3
-#define TCPIP_FTPC_DATA_SKT_TX_BUFF_SIZE_DFLT        0
-#define TCPIP_FTPC_DATA_SKT_RX_BUFF_SIZE_DFLT        0
-#define TCPIP_FTPC_COMMANDS  
 
 
 /*** IPv4 Configuration ***/
@@ -483,7 +483,7 @@ extern "C" {
 #define NET_PRES_NUM_SOCKETS 20
 
 /* Net Pres RTOS Configurations*/
-#define NET_PRES_RTOS_STACK_SIZE                16384
+#define NET_PRES_RTOS_STACK_SIZE                4096
 #define NET_PRES_RTOS_TASK_PRIORITY             1
 	
 #define FREERTOS
@@ -577,9 +577,9 @@ extern "C" {
 #define TCPIP_HTTP_NET_USE_COOKIES
 #define TCPIP_HTTP_NET_USE_AUTHENTICATION
 #define TCPIP_HTTP_NET_MAX_DATA_LEN		        		100
-#define TCPIP_HTTP_NET_SKT_TX_BUFF_SIZE		    		1024
-#define TCPIP_HTTP_NET_SKT_RX_BUFF_SIZE		    		1024
-#define TCPIP_HTTP_NET_LISTEN_PORT		    		    80
+#define TCPIP_HTTP_NET_SKT_TX_BUFF_SIZE		    		2048
+#define TCPIP_HTTP_NET_SKT_RX_BUFF_SIZE		    		2048
+#define TCPIP_HTTP_NET_LISTEN_PORT		    		    443
 #define TCPIP_HTTP_NET_CONFIG_FLAGS                       \
                                                         TCPIP_HTTP_NET_MODULE_FLAG_SECURE_DEFAULT |\
                                                         TCPIP_HTTP_NET_MODULE_FLAG_DEFAULT
@@ -587,7 +587,7 @@ extern "C" {
 #define TCPIP_HTTP_NET_RESPONSE_BUFFER_SIZE				300
 #define TCPIP_HTTP_NET_COOKIE_BUFFER_SIZE				200
 #define TCPIP_HTTP_NET_FIND_PEEK_BUFF_SIZE				512
-#define TCPIP_HTTP_NET_FILE_PROCESS_BUFFER_SIZE         512
+#define TCPIP_HTTP_NET_FILE_PROCESS_BUFFER_SIZE         1024
 #define TCPIP_HTTP_NET_FILE_PROCESS_BUFFERS_NUMBER      4
 #define TCPIP_HTTP_NET_FILE_PROCESS_BUFFER_RETRIES      10
 #define TCPIP_HTTP_NET_CHUNKS_NUMBER                    10

@@ -225,7 +225,7 @@ extern "C" {
 #define TCPIP_HTTP_NET_MAX_HEADER_LEN		    		15
 #define TCPIP_HTTP_NET_CACHE_LEN		        		"600"
 #define TCPIP_HTTP_NET_TIMEOUT		            		45
-#define TCPIP_HTTP_NET_MAX_CONNECTIONS		    		8
+#define TCPIP_HTTP_NET_MAX_CONNECTIONS		    		4
 #define TCPIP_HTTP_NET_DEFAULT_FILE		        		"index.htm"
 #define TCPIP_HTTP_NET_FILENAME_MAX_LEN			        25
 #define TCPIP_HTTP_NET_WEB_DIR		        		    "/mnt/mchpSite1/"
@@ -233,9 +233,9 @@ extern "C" {
 #define TCPIP_HTTP_NET_USE_COOKIES
 #define TCPIP_HTTP_NET_USE_AUTHENTICATION
 #define TCPIP_HTTP_NET_MAX_DATA_LEN		        		100
-#define TCPIP_HTTP_NET_SKT_TX_BUFF_SIZE		    		1024
-#define TCPIP_HTTP_NET_SKT_RX_BUFF_SIZE		    		1024
-#define TCPIP_HTTP_NET_LISTEN_PORT		    		    80
+#define TCPIP_HTTP_NET_SKT_TX_BUFF_SIZE		    		2048
+#define TCPIP_HTTP_NET_SKT_RX_BUFF_SIZE		    		2048
+#define TCPIP_HTTP_NET_LISTEN_PORT		    		    443
 #define TCPIP_HTTP_NET_CONFIG_FLAGS                       \
                                                         TCPIP_HTTP_NET_MODULE_FLAG_SECURE_DEFAULT |\
                                                         TCPIP_HTTP_NET_MODULE_FLAG_DEFAULT
@@ -243,7 +243,7 @@ extern "C" {
 #define TCPIP_HTTP_NET_RESPONSE_BUFFER_SIZE				300
 #define TCPIP_HTTP_NET_COOKIE_BUFFER_SIZE				200
 #define TCPIP_HTTP_NET_FIND_PEEK_BUFF_SIZE				512
-#define TCPIP_HTTP_NET_FILE_PROCESS_BUFFER_SIZE         512
+#define TCPIP_HTTP_NET_FILE_PROCESS_BUFFER_SIZE         1024
 #define TCPIP_HTTP_NET_FILE_PROCESS_BUFFERS_NUMBER      4
 #define TCPIP_HTTP_NET_FILE_PROCESS_BUFFER_RETRIES      10
 #define TCPIP_HTTP_NET_CHUNKS_NUMBER                    10
@@ -263,8 +263,8 @@ extern "C" {
 #define TCPIP_HTTP_NET_SSI_VARIABLE_STRING_MAX_LENGTH   10
 #define TCPIP_HTTP_NET_SSI_ECHO_NOT_FOUND_MESSAGE       "SSI Echo - Not Found: "
 #define TCPIP_HTTP_NET_CONNECTION_TIMEOUT          	0
-#define TCPIP_HTTP_NET_MALLOC_FUNC                  malloc
-#define TCPIP_HTTP_NET_FREE_FUNC                    free
+#define TCPIP_HTTP_NET_MALLOC_FUNC                  pvPortMalloc
+#define TCPIP_HTTP_NET_FREE_FUNC                    vPortFree
 #define TCPIP_HTTP_NET_CONSOLE_CMD           		false
 
 
@@ -395,7 +395,7 @@ extern "C" {
 
 /*** TCPIP Heap Configuration ***/
 #define TCPIP_STACK_USE_INTERNAL_HEAP
-#define TCPIP_STACK_DRAM_SIZE                       92160
+#define TCPIP_STACK_DRAM_SIZE                       128000
 #define TCPIP_STACK_DRAM_RUN_LIMIT                  2048
 
 #define TCPIP_STACK_MALLOC_FUNC                     malloc
@@ -448,7 +448,7 @@ extern "C" {
 
 
 /* TCP/IP RTOS Configurations*/
-#define TCPIP_RTOS_STACK_SIZE                1024
+#define TCPIP_RTOS_STACK_SIZE                2048
 #define TCPIP_RTOS_PRIORITY             1
 
 
@@ -637,7 +637,7 @@ extern "C" {
 #define NET_PRES_NUM_SOCKETS 10
 
 /* Net Pres RTOS Configurations*/
-#define NET_PRES_RTOS_STACK_SIZE                1024
+#define NET_PRES_RTOS_STACK_SIZE                4096
 #define NET_PRES_RTOS_TASK_PRIORITY             1
 	
 #define FREERTOS

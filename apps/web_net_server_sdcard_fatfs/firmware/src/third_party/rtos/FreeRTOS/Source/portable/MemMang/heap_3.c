@@ -73,7 +73,7 @@ void *pvReturn;
 			extern void vApplicationMallocFailedHook( void );
 			vApplicationMallocFailedHook();
 		}
-	}
+            }
 	#endif
 
 	return pvReturn;
