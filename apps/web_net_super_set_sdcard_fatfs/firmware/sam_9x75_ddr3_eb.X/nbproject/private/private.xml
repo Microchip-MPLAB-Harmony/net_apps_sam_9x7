@@ -14,6 +14,12 @@
             <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/net_pres/pres/src/net_pres.c</file>
             <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/initialization.c</file>
             <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/net_pres/pres/net_pres.h</file>
+            <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/library/tcpip/src/tcpip_manager_control.h</file>
+            <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/driver/gmac/src/dynamic/drv_gmac.c</file>
+            <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/driver/ethphy/src/dynamic/drv_ethphy.c</file>
+            <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/driver/ethphy/drv_ethphy.h</file>
+            <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/driver/ethphy/src/drv_ethphy_local.h</file>
+            <file>file:/C:/00_Repo/H3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/src/config/sam_9x75_ddr3_eb/driver/gmac/src/drv_gmac_local.h</file>
         </group>
     </open-files>
 </project-private>
