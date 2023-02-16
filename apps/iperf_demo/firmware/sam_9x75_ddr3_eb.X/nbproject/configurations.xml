@@ -309,7 +309,6 @@
             <itemPath>../src/packs/SAM9X75_DFP/component/otpc.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/component/puf.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/component/csi.h</itemPath>
-            <itemPath>../src/packs/SAM9X75_DFP/component/uhpfs.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/component/pmerrloc.h</itemPath>
           </logicalFolder>
           <logicalFolder name="instance" displayName="instance" projectFiles="true">
@@ -339,7 +338,6 @@
             <itemPath>../src/packs/SAM9X75_DFP/instance/pioa.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/otpc.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/i2smcc.h</itemPath>
-            <itemPath>../src/packs/SAM9X75_DFP/instance/uhphs_ohci.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/pwm.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/ssc.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/shdwc.h</itemPath>
@@ -379,6 +377,8 @@
             <itemPath>../src/packs/SAM9X75_DFP/instance/lvdsc.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/sdmmc0.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/tc0.h</itemPath>
+            <itemPath>../src/packs/SAM9X75_DFP/instance/csi.h</itemPath>
+            <itemPath>../src/packs/SAM9X75_DFP/instance/dsi.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/SAM9X75_DFP/pio/sam9x75.h</itemPath>
@@ -771,20 +771,20 @@
         <targetDevice>SAM9X75</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.20</languageToolchainVersion>
+        <languageToolchainVersion>4.21</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAM9X7_DFP" vendor="Microchip" version="1.1.6"/>
+        <pack name="SAM9X7_DFP" vendor="Microchip" version="1.1.120"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
         <ScriptingSetting key="boot.use" value="true"/>
         <ScriptingSetting key="boot.entry_adr" value=""/>
         <ScriptingSetting key="boot.path"
-                          value="C:\00_Repo\H3\at91bootstrap\build\binaries\at91bootstrap.elf"/>
+                          value="${ProjectDir}\..\at91bootstrap_sam_9x75_eb.X\build\binaries\at91bootstrap.elf"/>
         <ScriptingSetting key="boot.prj" value=""/>
       </ScriptingSettings>
       <compileType>
@@ -815,7 +815,6 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
-        <property key="appendMe" value=""/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -873,7 +872,6 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
-        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -913,7 +911,6 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
-        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>

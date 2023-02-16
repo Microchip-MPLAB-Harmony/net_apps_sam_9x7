@@ -130,6 +130,9 @@ void DBGU_Handler( void )                __attribute__((weak, alias("DefaultInte
 void ECC_Handler( void )                 __attribute__((weak, alias("DefaultInterruptHandler")));
 void MC_Handler( void )                  __attribute__((weak, alias("DefaultInterruptHandler")));
 void CSI2DC_Handler( void )              __attribute__((weak, alias("DefaultInterruptHandler")));
+void CSI_Handler( void )                 __attribute__((weak, alias("DefaultInterruptHandler")));
+void DSI_Handler( void )                 __attribute__((weak, alias("DefaultInterruptHandler")));
+void MIPIPHY_Handler( void )             __attribute__((weak, alias("DefaultInterruptHandler")));
 void LVDSC_Handler( void )               __attribute__((weak, alias("DefaultInterruptHandler")));
 void LVDSPHY_Handler( void )             __attribute__((weak, alias("DefaultInterruptHandler")));
 void PIT64B1_Handler( void )             __attribute__((weak, alias("DefaultInterruptHandler")));
