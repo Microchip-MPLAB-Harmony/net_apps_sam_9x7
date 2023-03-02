@@ -49,7 +49,7 @@ The following applications are provided to demonstrate the typical or interestin
 ____
 
 
-[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/net/blob/master/Microchip_SLA001.md)
+[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_9x7/blob/master/Microchip_SLA001.md)
 [![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/net_apps_sam_9x7.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_9x7/releases/latest)
 [![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/net_apps_sam_9x7.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_9x7/releases/latest)
 [![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/net_apps_sam_9x7.svg)](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_9x7/graphs/commit-activity)
