@@ -3,7 +3,7 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
-## Harmony 3 Network application examples for SAM 9X7 family  v3.0.0
+## Harmony 3 Network Application Examples for SAM 9X7 Family  v3.0.0
 The applications demonstrate the typical usage of Harmony 3 TCP/IP Stack on a hardware board with SAM9X75 device.
 - All applications use MCC for configuration
 - All applications created with TCP/IP Configurator Plugin (beta)
@@ -12,7 +12,8 @@ The applications demonstrate the typical usage of Harmony 3 TCP/IP Stack on a ha
 - None
 
 ### Known Issues
-- None
+- TCP/IP Configurator plugin fails to open when TCP/IP heap type is TCPIP_STACK_HEAP_TYPE_EXTERNAL_HEAP.
+- DBGU0 peripheral receive is not working with standard FTDI cable. The TCP/IP demos use DBGU1 beacuse of this issue.
 
 ### Development Tools
 
