@@ -12,7 +12,9 @@
             <header-extensions>h</header-extensions>
             <asminc-extensions/>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>../src/config/sam_9x75_ddr3_eb_freertos/driver/miim/src/dynamic</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>sam_9x75_ddr3_eb_freertos</name>
