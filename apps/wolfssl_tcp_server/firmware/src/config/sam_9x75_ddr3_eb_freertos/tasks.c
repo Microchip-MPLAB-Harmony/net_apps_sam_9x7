@@ -100,7 +100,7 @@ void _DRV_MIIM_Task(  void *pvParameters  )
     {
        
        
-       DRV_MIIM_Tasks(sysObj.drvMiim_0);
+       DRV_MIIM_OBJECT_BASE_Default.DRV_MIIM_Tasks(sysObj.drvMiim_0);
        
        
        
@@ -190,8 +190,7 @@ void SYS_Tasks ( void )
         /* Create OS Thread for APP_Tasks. */
     (void) xTaskCreate((TaskFunction_t) lAPP_Tasks,
                 "APP_Tasks",
-                //1024,
-                4096,
+                1024,
                 NULL,
                 1,
                 &xAPP_Tasks);
