@@ -57,6 +57,16 @@
 // *****************************************************************************
 // *****************************************************************************
 
+void SYSC_SharedHandler (void);
+void FLEXCOM3_InterruptHandler (void);
+void SDMMC0_InterruptHandler (void);
+void TC0_InterruptHandler (void);
+void GMAC_InterruptHandler (void);
+
+void PIT_InterruptHandler (void);
+
+/* Interrupt Handler for spurious interrupts */
+void SPURIOUS_INTERRUPT_Handler (void);
 
 
 #endif // INTERRUPTS_H
