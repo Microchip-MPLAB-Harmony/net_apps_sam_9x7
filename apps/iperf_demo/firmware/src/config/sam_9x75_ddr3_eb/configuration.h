@@ -255,10 +255,10 @@ extern "C" {
 
 /*** iperf Configuration ***/
 #define TCPIP_STACK_USE_IPERF
-#define TCPIP_IPERF_TX_BUFFER_SIZE		8192
-#define TCPIP_IPERF_RX_BUFFER_SIZE  	8192
+#define TCPIP_IPERF_TX_BUFFER_SIZE		32768
+#define TCPIP_IPERF_RX_BUFFER_SIZE  	32768
 #define TCPIP_IPERF_TX_WAIT_TMO     	100
-#define TCPIP_IPERF_TX_QUEUE_LIMIT  	2
+#define TCPIP_IPERF_TX_QUEUE_LIMIT  	10
 #define TCPIP_IPERF_TIMING_ERROR_MARGIN 0
 #define TCPIP_IPERF_MAX_INSTANCES       1
 #define TCPIP_IPERF_TX_BW_LIMIT  		1
@@ -279,7 +279,7 @@ extern "C" {
 
 /*** TCPIP Heap Configuration ***/
 #define TCPIP_STACK_USE_INTERNAL_HEAP
-#define TCPIP_STACK_DRAM_SIZE                       409600
+#define TCPIP_STACK_DRAM_SIZE                       614400
 #define TCPIP_STACK_DRAM_RUN_LIMIT                  2048
 
 #define TCPIP_STACK_MALLOC_FUNC                     malloc
@@ -309,7 +309,7 @@ extern "C" {
 #define TCPIP_STACK_USE_TCP
 #define TCPIP_STACK_USE_UDP
 
-#define TCPIP_STACK_TICK_RATE		        		1
+#define TCPIP_STACK_TICK_RATE		        		2
 #define TCPIP_STACK_SECURE_PORT_ENTRIES             10
 #define TCPIP_STACK_LINK_RATE		        		333
 
@@ -342,10 +342,10 @@ extern "C" {
 #define TCPIP_GMAC_RX_BUFF_SIZE_DUMMY            64
 #define TCPIP_GMAC_TX_BUFF_SIZE_DUMMY            64
 /*** QUEUE 0 TX Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0            100
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0            20
 #define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE0                 1536
 /*** QUEUE 0 RX Configuration ***/
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0            100
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0            256
 #define TCPIP_GMAC_RX_BUFF_SIZE_QUE0                    1536
 #define TCPIP_GMAC_RX_DEDICATED_BUFFERS_QUE0            100
 #define TCPIP_GMAC_RX_ADDL_BUFF_COUNT_QUE0              4
@@ -434,8 +434,8 @@ extern "C" {
 /*** UDP Configuration ***/
 #define TCPIP_UDP_MAX_SOCKETS		                	10
 #define TCPIP_UDP_SOCKET_DEFAULT_TX_SIZE		    	512
-#define TCPIP_UDP_SOCKET_DEFAULT_TX_QUEUE_LIMIT    	 	100
-#define TCPIP_UDP_SOCKET_DEFAULT_RX_QUEUE_LIMIT			125
+#define TCPIP_UDP_SOCKET_DEFAULT_TX_QUEUE_LIMIT    	 	20
+#define TCPIP_UDP_SOCKET_DEFAULT_RX_QUEUE_LIMIT			20
 #define TCPIP_UDP_USE_POOL_BUFFERS   false
 #define TCPIP_UDP_USE_TX_CHECKSUM             			true
 #define TCPIP_UDP_USE_RX_CHECKSUM             			true
