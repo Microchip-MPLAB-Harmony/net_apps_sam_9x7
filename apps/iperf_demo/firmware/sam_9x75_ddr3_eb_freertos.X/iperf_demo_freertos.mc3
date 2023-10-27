@@ -2418,6 +2418,28 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvGmac" name="DRV_GMAC_RX_CHKSM_OFFLOAD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvGmac&gt;
+  &lt;drvGmac dnOrder=&quot;0&quot; id=&quot;DRV_GMAC_RX_CHKSM_OFFLOAD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/drvGmac&gt;
+&lt;/drvGmac&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvGmac" name="DRV_GMAC_TX_CHKSM_OFFLOAD"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvGmac&gt;
+  &lt;drvGmac dnOrder=&quot;0&quot; id=&quot;DRV_GMAC_TX_CHKSM_OFFLOAD&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/drvGmac&gt;
+&lt;/drvGmac&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvGmac" name="TCPIP_GMAC_RX_ADDL_BUFF_COUNT_QUE0"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvGmac&gt;
   &lt;drvGmac dnOrder=&quot;0&quot; id=&quot;TCPIP_GMAC_RX_ADDL_BUFF_COUNT_QUE0&quot;&gt;
@@ -3196,6 +3218,17 @@
          <value>__ROOTVIEW</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_command" name="SYS_COMMAND_MAX_CMD_ARGS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_command&gt;
+  &lt;sys_command dnOrder=&quot;0&quot; id=&quot;SYS_COMMAND_MAX_CMD_ARGS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;16&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/sys_command&gt;
+&lt;/sys_command&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_command" name="SYS_COMMAND_PRINT_BUFFER_SIZE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_command&gt;
   &lt;sys_command dnOrder=&quot;0&quot; id=&quot;SYS_COMMAND_PRINT_BUFFER_SIZE&quot;&gt;
@@ -3400,6 +3433,33 @@
          <value>__ROOTVIEW</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_time" name="SYS_TIME_ACHIEVABLE_TICK_RATE_HZ"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_time&gt;
+  &lt;sys_time dnOrder=&quot;0&quot; id=&quot;SYS_TIME_ACHIEVABLE_TICK_RATE_HZ&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sys_time&quot; value=&quot;100015986&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/sys_time&gt;
+&lt;/sys_time&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_time" name="SYS_TIME_OPERATING_MODE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_time&gt;
+  &lt;sys_time dnOrder=&quot;0&quot; id=&quot;SYS_TIME_OPERATING_MODE&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;TICK BASED&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/sys_time&gt;
+&lt;/sys_time&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_time" name="SYS_TIME_PLIB"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_time&gt;
   &lt;sys_time dnOrder=&quot;0&quot; id=&quot;SYS_TIME_PLIB&quot;&gt;
@@ -3417,6 +3477,58 @@
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;sys_time&quot; value=&quot;tc0&quot;/&gt;
     &lt;/Values&gt;
+  &lt;/sys_time&gt;
+&lt;/sys_time&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_time" name="SYS_TIME_TICKLESS_LOCAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_time&gt;
+  &lt;sys_time dnOrder=&quot;0&quot; id=&quot;SYS_TIME_TICKLESS_LOCAL&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+  &lt;/sys_time&gt;
+&lt;/sys_time&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_time" name="SYS_TIME_TICKLESS_SOURCE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_time&gt;
+  &lt;sys_time dnOrder=&quot;0&quot; id=&quot;SYS_TIME_TICKLESS_SOURCE&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+  &lt;/sys_time&gt;
+&lt;/sys_time&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_time" name="SYS_TIME_TICK_BASED_LOCAL"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_time&gt;
+  &lt;sys_time dnOrder=&quot;0&quot; id=&quot;SYS_TIME_TICK_BASED_LOCAL&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+  &lt;/sys_time&gt;
+&lt;/sys_time&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="sys_time" name="SYS_TIME_TICK_BASED_SOURCE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;sys_time&gt;
+  &lt;sys_time dnOrder=&quot;0&quot; id=&quot;SYS_TIME_TICK_BASED_SOURCE&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;enabled&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
   &lt;/sys_time&gt;
 &lt;/sys_time&gt;
 </value>
@@ -3527,7 +3639,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tc0&gt;
   &lt;tc0 dnOrder=&quot;0&quot; id=&quot;SYS_TIME_PLIB_OPERATION_MODE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;SYS_TIME_PLIB_MODE_COMPARE&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;SYS_TIME_PLIB_MODE_PERIOD&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tc0&gt;
 &lt;/tc0&gt;
@@ -3539,6 +3651,17 @@
   &lt;tc0 dnOrder=&quot;0&quot; id=&quot;SYS_TIME_TC_CHANNEL&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;0&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/tc0&gt;
+&lt;/tc0&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tc0" name="SYS_TIME_TICK_RATE_MS"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tc0&gt;
+  &lt;tc0 dnOrder=&quot;0&quot; id=&quot;SYS_TIME_TICK_RATE_MS&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;1.0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tc0&gt;
 &lt;/tc0&gt;
@@ -3682,11 +3805,11 @@
   &lt;tc0 dnOrder=&quot;0&quot; id=&quot;TC0_IER_CPAS&quot;&gt;
     &lt;Attributes dnOrder=&quot;0&quot;&gt;
       &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
       &lt;/Boolean&gt;
     &lt;/Attributes&gt;
     &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;true&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;false&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tc0&gt;
 &lt;/tc0&gt;
@@ -3697,7 +3820,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tc0&gt;
   &lt;tc0 dnOrder=&quot;0&quot; id=&quot;TC0_IER_CPCS&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;false&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;true&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tc0&gt;
 &lt;/tc0&gt;
@@ -3730,7 +3853,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tc0&gt;
   &lt;tc0 dnOrder=&quot;0&quot; id=&quot;TC0_TIMER_PERIOD_COUNT&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;2083&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tc0&gt;
 &lt;/tc0&gt;
@@ -3745,11 +3868,11 @@
         &lt;Value dnOrder=&quot;0&quot;&gt;2061584.6&lt;/Value&gt;
       &lt;/Float&gt;
       &lt;Boolean dnOrder=&quot;1&quot; id=&quot;visible&quot;&gt;
-        &lt;Value dnOrder=&quot;0&quot;&gt;false&lt;/Value&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
       &lt;/Boolean&gt;
     &lt;/Attributes&gt;
     &lt;Values dnOrder=&quot;1&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;0.0&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tc0&quot; value=&quot;1.0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tc0&gt;
 &lt;/tc0&gt;
@@ -4572,7 +4695,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\system\time\src\sys_time_local.h</file>
-         <hash>df56f970664902417d798760e44978cf4b84c108cf0761647a383e91db76980c</hash>
+         <hash>b5911e9527666f333c003f69b86f92b9b88712a365d0d5f92c6e816e9f43b4c6</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\eccsi.h</file>
@@ -5028,7 +5151,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\library\tcpip\src\berkeley_manager.h</file>
-         <hash>19254a00f9a2c37a0f1199ce4053502487426784a97b7902832d734cff7106d8</hash>
+         <hash>523b55a8af2a7783868f95c9529ad55d260daad19a2f59214c63654fa85b0ee5</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\hash.h</file>
@@ -5088,7 +5211,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\configuration.h</file>
-         <hash>ada42f914b165b7cac0fc09bdcf63afab46387bca8729e8405a8cda2eea9ca3f</hash>
+         <hash>7dc3ace8038bf65aead09b3f7a611a42d3cb8911a2bd3b69a2e9aedfcfa06576</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\driver\gmac\src\dynamic\_gmac_dcpt_lists.h</file>
@@ -5316,7 +5439,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\system\time\src\sys_time.c</file>
-         <hash>fa2d85ab967b80157caf8483f6e28a23b12b548844a1d80f2fef760cd9b99271</hash>
+         <hash>dc74d512b721a836d281971589587797699785b284c73ef9a4e48023eff77c8c</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\chacha20_poly1305.h</file>
@@ -5756,7 +5879,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\system\time\sys_time_definitions.h</file>
-         <hash>46537746b1d12ece6b682c9be1c8f3f219663c638c21a51a973762b7b393afe6</hash>
+         <hash>cc0d00616cb683322f8a66b8c5afce4d65e5a5b972c613d6e562f9a5a5d47c8f</hash>
       </entry>
       <entry>
          <file>..\src\packs\SAM9X75_DFP\instance\aes.h</file>
@@ -6128,7 +6251,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\system\command\sys_command.h</file>
-         <hash>7ef4ded141f7f71e84038aa39c414929ee9cbd9cdacb92e06544f5bf53915dca</hash>
+         <hash>ed24ba3a9c5603783bf20b35fb5464928a5be5e07c9f3d19011ccbd42b621a99</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\pwdbased.h</file>
@@ -6372,7 +6495,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\driver\gmac\src\dynamic\drv_gmac_lib_sam9X7.c</file>
-         <hash>08473bc17185d51328ca780d490f8fc72c04c3ac35a34d5d6c68c650dcab6c31</hash>
+         <hash>f7a8f098631b7d75585ee079dd94919bb923584a310061ac1139a59a179f227d</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\library\tcpip\src\ftp_private.h</file>
@@ -6504,7 +6627,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\peripheral\tc\plib_tc0.c</file>
-         <hash>e77aab5aa99ecfc26f1b55f7fe04a5ed4e5e6f8255a6217faf9ec295840f86d9</hash>
+         <hash>00adf99ae7e17a2cdbe56f8b417d4f5bb009c02754f84e21f79593aee77ebf60</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\eccsi.c</file>
@@ -6588,7 +6711,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\driver\gmac\src\dynamic\drv_gmac.c</file>
-         <hash>9dbd872b88897925d44d01c6248d3b3d541f11d18dcb36e53c3d6d17d8e27ee7</hash>
+         <hash>ec76666fa8119d45514373a33a553e0fa95e855087bf5e82748b4d7e55a4f58d</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\library\tcpip\src\tcpip_mac_bridge_private.h</file>
@@ -6632,7 +6755,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\initialization.c</file>
-         <hash>7f6db427dccec59d4ff1a9e4bd6755ef76f2d3176133983bba4247b7899b4f55</hash>
+         <hash>d454b7307fe6a902b05263dd21a29f98b392265d3378159bff32642c5f1e8e52</hash>
       </entry>
       <entry>
          <file>..\src\packs\SAM9X75_DFP\component\sdmmc.h</file>
