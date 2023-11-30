@@ -8,6 +8,9 @@
         <logicalFolder name="sam_9x75_ddr3_eb_freertos"
                        displayName="sam_9x75_ddr3_eb_freertos"
                        projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_9x75_ddr3_eb_freertos/bsp/bsp.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/sam_9x75_ddr3_eb_freertos/crypto/crypto.h</itemPath>
           </logicalFolder>
@@ -637,6 +640,9 @@
         <logicalFolder name="sam_9x75_ddr3_eb_freertos"
                        displayName="sam_9x75_ddr3_eb_freertos"
                        projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_9x75_ddr3_eb_freertos/bsp/bsp.c</itemPath>
+          </logicalFolder>
           <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/sam_9x75_ddr3_eb_freertos/crypto/src/crypto.c</itemPath>
           </logicalFolder>
