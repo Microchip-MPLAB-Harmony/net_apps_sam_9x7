@@ -1012,6 +1012,7 @@ void SYS_Initialize ( void* data )
 
 	SDMMC0_Initialize();
 
+	BSP_Initialize();
 	PIT_TimerInitialize();
 
  
