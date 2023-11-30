@@ -80,6 +80,24 @@
 #define SWITCH_Get()               ((PIOC_REGS->PIO_PDSR >> 24) & 0x1)
 #define SWITCH_PIN                  PIO_PIN_PC24
 
+/*** Macros for LED_GREEN pin ***/
+#define LED_GREEN_Set()               (PIOC_REGS->PIO_SODR = (1<<21))
+#define LED_GREEN_Clear()             (PIOC_REGS->PIO_CODR = (1<<21))
+#define LED_GREEN_Toggle()            (PIOC_REGS->PIO_ODSR ^= (1<<21))
+#define LED_GREEN_OutputEnable()      (PIOC_REGS->PIO_OER = (1<<21))
+#define LED_GREEN_InputEnable()       (PIOC_REGS->PIO_ODR = (1<<21))
+#define LED_GREEN_Get()               ((PIOC_REGS->PIO_PDSR >> 21) & 0x1)
+#define LED_GREEN_PIN                  PIO_PIN_PC21
+
+/*** Macros for LED_RED pin ***/
+#define LED_RED_Set()               (PIOC_REGS->PIO_SODR = (1<<19))
+#define LED_RED_Clear()             (PIOC_REGS->PIO_CODR = (1<<19))
+#define LED_RED_Toggle()            (PIOC_REGS->PIO_ODSR ^= (1<<19))
+#define LED_RED_OutputEnable()      (PIOC_REGS->PIO_OER = (1<<19))
+#define LED_RED_InputEnable()       (PIOC_REGS->PIO_ODR = (1<<19))
+#define LED_RED_Get()               ((PIOC_REGS->PIO_PDSR >> 19) & 0x1)
+#define LED_RED_PIN                  PIO_PIN_PC19
+
 /*** Macros for GPIO_PC25 pin ***/
 #define GPIO_PC25_Set()               (PIOC_REGS->PIO_SODR = (1<<25))
 #define GPIO_PC25_Clear()             (PIOC_REGS->PIO_CODR = (1<<25))
