@@ -1,6 +1,6 @@
 "Pin Number","Pin ID","Custom Name","Function","Direction","Latch","Open Drain","PIO Interrupt","Pull Up","Pull Down","Glitch/Debounce Filter",Slew Rate Control,Drive Strength
 A2,PC8,,Available,In,,,,,,,,
-A3,PC20,LED1,GPIO,Out,Low,No,Disabled,No,No,Disabled,No,Low
+A3,PC20,,Available,In,,,,,,,,
 A4,PC24,SWITCH,GPIO,In,n/a,No,Disabled,Yes,No,Disabled,No,Low
 A5,PC28,,Available,In,,,,,,,,
 A6,PC2,,Available,In,,,,,,,,
@@ -34,8 +34,8 @@ D8,PC29,,Available,In,,,,,,,,
 D9,PB16,,Available,In,,,,,,,,
 D11,PB20,,Available,In,,,,,,,,
 D12,PB26,,Available,In,,,,,,,,
-E3,PC21,,Available,In,,,,,,,,
-E4,PC19,,Available,In,,,,,,,,
+E3,PC21,LED_GREEN,GPIO,Out,Low,No,Disabled,No,No,Disabled,No,Low
+E4,PC19,LED_RED,GPIO,Out,Low,No,Disabled,No,No,Disabled,No,Low
 E6,PC25,GPIO_PC25,GPIO,Out,Low,No,Disabled,No,No,Disabled,No,Low
 E8,PC27,,Available,In,,,,,,,,
 E9,PB18,,Available,In,,,,,,,,
@@ -57,7 +57,7 @@ M3,PA24,,Available,In,,,,,,,,
 M4,PA28,,Available,In,,,,,,,,
 M6,PA20,,Available,In,,,,,,,,
 M8,PA11,,Available,In,,,,,,,,
-M9,PB7,,GMAC_GTXEN,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
+M9,PB7,,Available,In,,,,,,,,
 M11,PD11,,Available,In,,,,,,,,
 N3,PA5,,SDMMC0_DAT3,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
 N5,PA13,,Available,In,,,,,,,,
@@ -86,7 +86,7 @@ R7,PA10,,Available,In,,,,,,,,
 R8,PA4,,SDMMC0_DAT2,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
 R9,PB14,,GMAC_GTX1,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
 R10,PB10,,GMAC_GMDC,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
-R11,PB6,,GMAC_GTXCK,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
+R11,PB6,,Available,In,,,,,,,,
 R12,PB2,,GMAC_G125CK,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
 R13,PB0,,GMAC_GRX2,n/a,n/a,No,Disabled,Yes,No,Disabled,No,Low
 R14,PD10,,Available,In,,,,,,,,
@@ -99,7 +99,7 @@ T6,PA8,,Available,In,,,,,,,,
 T7,PA6,,Available,In,,,,,,,,
 T8,PA2,,SDMMC0_CK,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
 T9,PA0,,SDMMC0_DAT0,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
-T10,PB3,,GMAC_GRXCTL,n/a,n/a,No,Disabled,No,No,Disabled,No,Low
+T10,PB3,,Available,In,,,,,,,,
 T11,PB12,,GMAC_GRX1,n/a,n/a,No,Disabled,Yes,No,Disabled,No,Low
 T12,PB8,,GMAC_GRXCK,n/a,n/a,No,Disabled,Yes,No,Disabled,No,Low
 T13,PB4,,GMAC_GTX2,n/a,n/a,No,Disabled,No,No,Disabled,No,Low

@@ -68,6 +68,7 @@
 #include "system/fs/fat_fs/file_system/ffconf.h"
 #include "system/fs/fat_fs/hardware_access/diskio.h"
 #include "peripheral/sdmmc/plib_sdmmc0.h"
+#include "bsp/bsp.h"
 #include "peripheral/tc/plib_tc0.h"
 #include "library/tcpip/tcpip.h"
 #include "system/sys_time_h2_adapter.h"

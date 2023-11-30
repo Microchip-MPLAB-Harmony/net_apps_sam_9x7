@@ -1020,6 +1020,7 @@ void SYS_Initialize ( void* data )
 
 	SDMMC0_Initialize();
 
+	BSP_Initialize();
  
     TC0_CH0_TimerInitialize(); 
      
