@@ -8,6 +8,9 @@
         <logicalFolder name="sam_9x75_ddr3_eb"
                        displayName="sam_9x75_ddr3_eb"
                        projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_9x75_ddr3_eb/bsp/bsp.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/sam_9x75_ddr3_eb/crypto/crypto.h</itemPath>
           </logicalFolder>
@@ -602,6 +605,9 @@
         <logicalFolder name="sam_9x75_ddr3_eb"
                        displayName="sam_9x75_ddr3_eb"
                        projectFiles="true">
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_9x75_ddr3_eb/bsp/bsp.c</itemPath>
+          </logicalFolder>
           <logicalFolder name="crypto" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/sam_9x75_ddr3_eb/crypto/src/crypto.c</itemPath>
           </logicalFolder>

@@ -32,6 +32,9 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include "configuration.h"
+#include "definitions.h"
+
+
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -67,10 +70,15 @@ extern "C" {
 #define APP_SWITCH_3StateGet()      SWITCH2_Get()
 #endif
 
-#define APP_LED_1StateSet()         LED1_Set()
-#define APP_LED_1StateGet()         LED1_Get()
-#define APP_LED_1StateClear()       LED1_Clear()
-#define APP_LED_1StateToggle()      LED1_Toggle()
+#define APP_LED_1StateSet()         LED_GREEN_Set() 
+#define APP_LED_1StateGet()         LED_GREEN_Get() 
+#define APP_LED_1StateClear()       LED_GREEN_Clear() 
+#define APP_LED_1StateToggle()      LED_GREEN_Toggle() 
+    
+#define APP_LED_2StateSet()         LED_RED_Set() 
+#define APP_LED_2StateGet()         LED_RED_Get() 
+#define APP_LED_2StateClear()       LED_RED_Clear()
+#define APP_LED_2StateToggle()      LED_RED_Toggle()  
 
 #if defined(__PIC32MZ__)
 #define APP_LED_2StateSet()         LED2_Set()
