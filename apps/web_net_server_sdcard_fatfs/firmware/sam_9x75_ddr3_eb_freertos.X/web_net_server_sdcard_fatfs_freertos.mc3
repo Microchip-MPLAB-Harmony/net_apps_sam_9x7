@@ -10,6 +10,10 @@
          <string>class com.microchip.mcc.harmony.HarmonyGroupModule</string>
       </entry>
       <entry>
+         <string>BSP_SAM_9X75_Evaluation_Board</string>
+         <string>class com.microchip.mcc.harmony.HarmonyModule</string>
+      </entry>
+      <entry>
          <string>DATA LINK LAYER</string>
          <string>class com.microchip.mcc.harmony.HarmonyGroupModule</string>
       </entry>
@@ -206,6 +210,514 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BASIC CONFIGURATION" name="harmonyGroupDysplayName"/>
          <value>BASIC CONFIGURATION</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="#&amp;__MCC_Group_Parrent_id"/>
+         <value>__ROOTVIEW</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_BOARD_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_BOARD_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_CN0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_CN0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_CN1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_CN1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_CN2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_CN2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_CN3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_CN3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_CN4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_CN4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_CN5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_CN5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_DIR0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_DIR0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_DIR1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_DIR1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_DIR2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_DIR2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_DIR3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_DIR3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_DIR4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_DIR4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_DIR5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_DIR5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_LAT0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_LAT0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_LAT1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_LAT1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_LAT2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_LAT2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_LAT3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_LAT3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_LAT4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_LAT4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_LAT5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_LAT5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_MODE0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_MODE0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_MODE1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_MODE1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_MODE2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_MODE2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_MODE3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_MODE3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_MODE4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_MODE4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_MODE5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_MODE5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_OD0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_OD0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_OD1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_OD1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_OD2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_OD2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_OD3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_OD3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_OD4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_OD4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_OD5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_OD5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PD0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PD0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PD1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PD1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PD2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PD2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PD3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PD3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PD4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PD4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PD5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PD5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PIO_INTERRUPT0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PIO_INTERRUPT0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PIO_INTERRUPT1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PIO_INTERRUPT1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PIO_INTERRUPT2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PIO_INTERRUPT2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PIO_INTERRUPT3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PIO_INTERRUPT3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PIO_INTERRUPT4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PIO_INTERRUPT4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PIO_INTERRUPT5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PIO_INTERRUPT5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PU0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PU0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PU1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PU1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PU2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PU2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PU3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PU3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PU4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PU4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_PU5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_PU5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_TYPE0"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_TYPE0&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_TYPE1"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_TYPE1&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_TYPE2"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_TYPE2&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_TYPE3"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_TYPE3&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_TYPE4"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_TYPE4&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_CUSTOM_TYPE5"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_CUSTOM_TYPE5&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="BSP_SAM_9X75_Evaluation_Board" name="BSP_TYPE_SIZE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;BSP_SAM_9X75_Evaluation_Board&gt;
+  &lt;BSP_SAM_9X75_Evaluation_Board dnOrder=&quot;0&quot; id=&quot;BSP_TYPE_SIZE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+&lt;/BSP_SAM_9X75_Evaluation_Board&gt;
+</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="DATA LINK LAYER" name="#&amp;__MCC_Group_Parrent_id"/>
@@ -425,7 +937,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;254&quot; canvasWidth=&quot;807&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;GraphSettings canvasHeight=&quot;751&quot; canvasWidth=&quot;877&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;ComponentGraph dnOrder=&quot;1&quot; id=&quot;APPLICATION LAYER&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
         &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;tcpipAnnounce&quot; x=&quot;340&quot; y=&quot;20&quot;/&gt;
@@ -479,24 +991,25 @@
     &lt;/ComponentGraph&gt;
     &lt;ComponentGraph dnOrder=&quot;8&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;FreeRTOS&quot; x=&quot;741&quot; y=&quot;105&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;HarmonyCore&quot; x=&quot;567&quot; y=&quot;18&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;TCP/IP STACK&quot; x=&quot;551&quot; y=&quot;396&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;core&quot; x=&quot;240&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;dfp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;drv_sdmmc&quot; x=&quot;334&quot; y=&quot;527&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;flexcom3&quot; x=&quot;39&quot; y=&quot;185&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;lib_crypto&quot; x=&quot;260&quot; y=&quot;440&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;lib_wolfcrypt&quot; x=&quot;26&quot; y=&quot;302&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;lib_wolfssl&quot; x=&quot;322&quot; y=&quot;359&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;10&quot; id=&quot;pit&quot; x=&quot;740&quot; y=&quot;20&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;11&quot; id=&quot;sdmmc0&quot; x=&quot;54&quot; y=&quot;493&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;12&quot; id=&quot;sys_command&quot; x=&quot;559&quot; y=&quot;125&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;13&quot; id=&quot;sys_console&quot; x=&quot;324&quot; y=&quot;171&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;sys_debug&quot; x=&quot;561&quot; y=&quot;254&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;15&quot; id=&quot;sys_fs&quot; x=&quot;552&quot; y=&quot;489&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;sys_time&quot; x=&quot;352&quot; y=&quot;6&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;17&quot; id=&quot;tc0&quot; x=&quot;33&quot; y=&quot;87&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;BSP_SAM_9X75_Evaluation_Board&quot; x=&quot;190&quot; y=&quot;140&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;FreeRTOS&quot; x=&quot;741&quot; y=&quot;105&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;HarmonyCore&quot; x=&quot;567&quot; y=&quot;18&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;TCP/IP STACK&quot; x=&quot;551&quot; y=&quot;396&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;core&quot; x=&quot;240&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;dfp&quot; x=&quot;20&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;6&quot; id=&quot;drv_sdmmc&quot; x=&quot;334&quot; y=&quot;527&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;7&quot; id=&quot;flexcom3&quot; x=&quot;39&quot; y=&quot;185&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;8&quot; id=&quot;lib_crypto&quot; x=&quot;260&quot; y=&quot;440&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;9&quot; id=&quot;lib_wolfcrypt&quot; x=&quot;26&quot; y=&quot;302&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;10&quot; id=&quot;lib_wolfssl&quot; x=&quot;322&quot; y=&quot;359&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;11&quot; id=&quot;pit&quot; x=&quot;740&quot; y=&quot;20&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;12&quot; id=&quot;sdmmc0&quot; x=&quot;54&quot; y=&quot;493&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;13&quot; id=&quot;sys_command&quot; x=&quot;559&quot; y=&quot;125&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;14&quot; id=&quot;sys_console&quot; x=&quot;324&quot; y=&quot;171&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;15&quot; id=&quot;sys_debug&quot; x=&quot;561&quot; y=&quot;254&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;16&quot; id=&quot;sys_fs&quot; x=&quot;552&quot; y=&quot;489&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;17&quot; id=&quot;sys_time&quot; x=&quot;352&quot; y=&quot;6&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;18&quot; id=&quot;tc0&quot; x=&quot;33&quot; y=&quot;87&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
   &lt;/UserData&gt;
@@ -1337,7 +1850,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_169_FUNCTION_TYPE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;GMAC_GTXEN&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1612,7 +2125,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_219_FUNCTION_TYPE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;GMAC_GTXCK&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1733,7 +2246,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_234_FUNCTION_TYPE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;GMAC_GRXCTL&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1744,7 +2257,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_234_PERIPHERAL_FUNCTION&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;A&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;GMAC_GRXCTL&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1894,12 +2407,30 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_3_LAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_3_LAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_3_PERIPHERAL_FUNCTION"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_3_PERIPHERAL_FUNCTION&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
     &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_4_DIR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_4_DIR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
   &lt;/core&gt;
 &lt;/core&gt;
 </value>
@@ -1943,6 +2474,112 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_4_PU&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;User dnOrder=&quot;0&quot; value=&quot;True&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_67_DIR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_67_DIR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_67_FUNCTION_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_67_FUNCTION_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;LED_GREEN&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_67_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_67_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_67_LAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_67_LAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_67_PERIPHERAL_FUNCTION"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_67_PERIPHERAL_FUNCTION&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_68_DIR"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_68_DIR&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_68_FUNCTION_NAME"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_68_FUNCTION_NAME&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;LED_RED&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_68_FUNCTION_TYPE"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_68_FUNCTION_TYPE&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_68_LAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_68_LAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_68_PERIPHERAL_FUNCTION"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_68_PERIPHERAL_FUNCTION&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;GPIO&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -2096,7 +2733,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIOB_PDR_VALUE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;32767&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;32759&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -2162,7 +2799,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIOC_OER_VALUE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;34603008&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;37224448&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -5640,7 +6277,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\peripheral\pio\plib_pio.h</file>
-         <hash>47ddaeb70e1dfd5987d571adba8b043b397a768f68f07ac673976043683f95a6</hash>
+         <hash>0f873bd1bfa809dd1ef954fbcd05846e7a674bb03f183724d4a445e27c466555</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\XC32\SAM\ARM926\portASM.S</file>
@@ -5692,7 +6329,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\peripheral\pio\plib_pio.c</file>
-         <hash>1a3f40784bfd9571246d980c871e0d49ef8642a9654359ed54342d111483de07</hash>
+         <hash>67c983084c6caba3460437e0733613947dbddf25153c1197bfd73dce2509f4ab</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\system\console\src\sys_console_local.h</file>
@@ -5840,7 +6477,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\pin_configurations.csv</file>
-         <hash>62b089556a136cc911f03ddde6c252b187cf7ee7c873e823c72bd1ab8f1d101e</hash>
+         <hash>a7f7795366441b6344c8c114605dd0ec906a2b94246a0c3f095de7123e0efba0</hash>
       </entry>
       <entry>
          <file>..\src\packs\SAM9X75_DFP\instance\csi.h</file>
@@ -6100,7 +6737,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\definitions.h</file>
-         <hash>b2a4b35a39073ea8019cb58fa6c774d9b2b6d29db5584b5c674d3a6c211a1fdd</hash>
+         <hash>50e3f37cf24e86895677c2424e302357b6a67218721e33784044d3124a6b024e</hash>
       </entry>
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\blake2b.c</file>
@@ -8000,11 +8637,15 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\initialization.c</file>
-         <hash>05631308f14d618163eae26495db254a3ec2ee47289b8cf6468c188b568bcda6</hash>
+         <hash>dc4dec68e636437d31019caa8b3380214c64e613673b6650a52b932af2ea5002</hash>
       </entry>
       <entry>
          <file>..\src\packs\SAM9X75_DFP\component\sdmmc.h</file>
          <hash>0758a1c78f37178bc9b801e90a53f3702638f2ea933599aedfe00853c62a5113</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_9x75_ddr3_eb_freertos\bsp\bsp.c</file>
+         <hash>c67b6294cff9844db10dc4cc9424374c1b21be88bcaef1fd4318c02e08946c17</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_ddr3_eb_freertos\library\tcpip\iperf.h</file>
@@ -8029,6 +8670,10 @@
       <entry>
          <file>..\src\third_party\wolfssl\wolfssl\wolfcrypt\src\error.c</file>
          <hash>00070dafae17afb3e49c9024b2d44a9a6d94c8ab6c8005664d678a236582ac0f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_9x75_ddr3_eb_freertos\bsp\bsp.h</file>
+         <hash>93852297a2942e705b3fe9cb3f8db80d6dcc2be1e4ffd28667516ec67f5381ad</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
