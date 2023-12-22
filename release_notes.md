@@ -11,7 +11,7 @@
 
 
 ### Improvements and Bug Fixes
-- IPERF throughput improvement.
+
 - Fix for GMAC driver critical section access issue.
 - ETHPHY driver write function.
 - Fix for bind operation in berkeley module.
@@ -19,7 +19,7 @@
 - Updated demo documentation.
 
 ### Known Issues
-None
+- IPERF throughput improvement result will be reported in the next release.
 
 
 ### Development Tools
