@@ -14,7 +14,7 @@
 
 // DOM-IGNORE-BEGIN
 /*****************************************************************************
- Copyright (C) 2012-2018 Microchip Technology Inc. and its subsidiaries.
+ Copyright (C) 2012-2024 Microchip Technology Inc. and its subsidiaries.
 
 Microchip Technology Inc. and its subsidiaries.
 
@@ -39,10 +39,10 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *****************************************************************************/
 // DOM-IGNORE-END
 
-
+#include "tcpip/tcpip.h"
 #include "app_commands.h"
 #include "app.h"
-#include "tcpip/tcpip.h"
+
 #if defined(TCPIP_STACK_COMMAND_ENABLE)
 
 
@@ -53,6 +53,7 @@ static void _APP_Commands_GetOptions(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char
 #ifdef TCPIP_STACK_USE_IPV6
 static void _APP_Commands_IPVersion(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv);
 #endif
+
 
 static const SYS_CMD_DESCRIPTOR    appCmdTbl[]=
 {
@@ -114,12 +115,12 @@ void _APP_Commands_SetOptions(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv
     strcpy(APP_Message_Buffer, argv[3]);
 }
 
-char bufferArea[3][80];
+char bufferArea[3][MAX_URL_SIZE + 20];
 
 void _APP_Commands_GetOptions(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
 {
     const void* cmdIoParam = pCmdIO->cmdIoParam;
-    
+
     if (argc != 1)
     {
         (*pCmdIO->pCmdApi->msg)(cmdIoParam, "Usage: getopt\r\n");
@@ -128,15 +129,14 @@ void _APP_Commands_GetOptions(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv
     }
 
      (*pCmdIO->pCmdApi->msg)(cmdIoParam, "Current UDP Options:\r\n");
-     sprintf(bufferArea[0], "\thostname: '%s'\r\n", APP_Hostname_Buffer);
+     snprintf(bufferArea[0], sizeof(bufferArea[0]), "\thostname: '%s'\r\n", APP_Hostname_Buffer);
      (*pCmdIO->pCmdApi->msg)(cmdIoParam, bufferArea[0]);
-     sprintf(bufferArea[1], "\tport: '%s'\r\n", APP_Port_Buffer);
+     snprintf(bufferArea[1], sizeof(bufferArea[1]), "\tport: '%s'\r\n", APP_Port_Buffer);
      (*pCmdIO->pCmdApi->msg)(cmdIoParam, bufferArea[1]);
-     sprintf(bufferArea[2], "\tmessage: '%s'\r\n", APP_Message_Buffer);
+     snprintf(bufferArea[2], sizeof(bufferArea[2]), "\tmessage: '%s'\r\n", APP_Message_Buffer);
      (*pCmdIO->pCmdApi->msg)(cmdIoParam, bufferArea[2]);
 
 }
-
 extern APP_DATA appData;
 #ifdef TCPIP_STACK_USE_IPV6
 void _APP_Commands_IPVersion(SYS_CMD_DEVICE_NODE* pCmdIO, int argc, char** argv)
