@@ -32,11 +32,22 @@ Microchip or any third party.
 /******************************************************************************
  * Prototypes
  ******************************************************************************/
-
+static DRV_ETHPHY_RESULT DRV_LAN8840_Skew_Setting(const DRV_ETHPHY_OBJECT_BASE* pBaseObj, DRV_HANDLE hClientObj);
 /******************************************************************************
  * Definitions
  ******************************************************************************/
-
+#define LAN8840_TX_CLK_SKEW 0x12 //default value is 7; Range 0x00 - 0x1F
+#define LAN8840_RX_CLK_SKEW 0x07 //default value is 7; Range 0x00 - 0x1F
+#define LAN8840_CLK_SKEW ((LAN8840_TX_CLK_SKEW << 5) | (LAN8840_RX_CLK_SKEW))
+typedef enum
+{
+    //States for Clock Skew setting
+    DRV_LAN8840_SKEW_CLK_1 = 0,
+    DRV_LAN8840_SKEW_CLK_2,
+    DRV_LAN8840_SKEW_CLK_3,  
+    DRV_LAN8840_SKEW_CLK_4,
+    DRV_LAN8840_SKEW_CLK_5,
+} DRV_LAN8840_SKEW_STATE;
 /****************************************************************************
  *                 interface functions
  ****************************************************************************/
@@ -66,7 +77,7 @@ Microchip or any third party.
  *****************************************************************************/
 static DRV_ETHPHY_RESULT DRV_EXTPHY_MIIConfigure(const DRV_ETHPHY_OBJECT_BASE* pBaseObj, DRV_HANDLE hClientObj, DRV_ETHPHY_CONFIG_FLAGS cFlags)
 {
-    return DRV_ETHPHY_RES_OK;
+    return DRV_LAN8840_Skew_Setting(pBaseObj, hClientObj);
 }
 
 /****************************************************************************
@@ -129,3 +140,110 @@ const DRV_ETHPHY_OBJECT  DRV_ETHPHY_OBJECT_LAN8840 =
     .bmconDetectMask = 0,                   // standard detection mask
     .bmstatCpblMask = 0,                    // standard capabilities mask
 };
+
+
+static DRV_ETHPHY_RESULT DRV_LAN8840_Skew_Setting(const DRV_ETHPHY_OBJECT_BASE* pBaseObj, DRV_HANDLE hClientObj)
+{
+    uint32_t skewState = 0;
+    int phyAddress = 0;
+    
+    DRV_ETHPHY_RESULT res = pBaseObj->DRV_ETHPHY_VendorDataGet(hClientObj, &skewState);
+    if(res < 0)
+    {   // some error occurred
+        return res;
+    }
+    
+    pBaseObj->DRV_ETHPHY_PhyAddressGet(hClientObj, DRV_ETHPHY_INF_IDX_ALL_EXTERNAL, &phyAddress);
+    
+    switch (skewState)
+    {
+        case DRV_LAN8840_SKEW_CLK_1:
+            //Write to MMD Control register to set MMD Device Address : 02
+            res = pBaseObj->DRV_ETHPHY_VendorSMIWriteWaitComplete(hClientObj, PHY_MMD_ACCESS_CONTROL, (_PHY_MMD_CNTL_ACCESS_ADDRESS_MASK | 0x02), phyAddress);
+            if(res < 0)
+            {   // some error
+                return res;
+            }
+            skewState++;
+            pBaseObj->DRV_ETHPHY_VendorDataSet(hClientObj, skewState);
+            res = DRV_ETHPHY_RES_PENDING;
+            break;
+
+        case DRV_LAN8840_SKEW_CLK_2:
+            // wait for write complete
+            res = pBaseObj->DRV_ETHPHY_VendorSMIOperationIsComplete(hClientObj);
+            if(res < 0)
+            {   // some error
+                return res;
+            }
+            else if(res == DRV_ETHPHY_RES_OK)
+            {   
+                // Write to MMD Address register to set Register Address for access : Clock Pad Skew Register
+                res = pBaseObj->DRV_ETHPHY_VendorSMIWriteWaitComplete(hClientObj, PHY_MMD_ACCESS_DATA_ADDR, (PHY_MMD_CLK_SKEW_REG), phyAddress);
+                if(res < 0)
+                {   // some error
+                    return res;
+                }
+                skewState++;
+                pBaseObj->DRV_ETHPHY_VendorDataSet(hClientObj, skewState);
+                res = DRV_ETHPHY_RES_PENDING;
+            }
+            break;
+
+        case DRV_LAN8840_SKEW_CLK_3:
+            // wait for write complete
+            res = pBaseObj->DRV_ETHPHY_VendorSMIOperationIsComplete(hClientObj);
+            if(res < 0)
+            {   // some error
+                return res;
+            }
+            else if(res == DRV_ETHPHY_RES_OK)
+            {   
+                //Write to MMD Control register to access the data
+                res = pBaseObj->DRV_ETHPHY_VendorSMIWriteWaitComplete(hClientObj, PHY_MMD_ACCESS_CONTROL, (_PHY_MMD_CNTL_ACCESS_DATA_MASK | 0x02), phyAddress);
+                if(res < 0)
+                {   // some error
+                    return res;
+                }
+                skewState++;
+                pBaseObj->DRV_ETHPHY_VendorDataSet(hClientObj, skewState);
+                res = DRV_ETHPHY_RES_PENDING;
+            }
+            break;
+            
+        case DRV_LAN8840_SKEW_CLK_4:
+            // wait for write complete
+            res = pBaseObj->DRV_ETHPHY_VendorSMIOperationIsComplete(hClientObj);
+            if(res < 0)
+            {   // some error
+                return res;
+            }
+            else if(res == DRV_ETHPHY_RES_OK)
+            {   
+                //Write to MMD Data register to write data to register : Set Rx/Tx Clock pad skew to maximum
+                res = pBaseObj->DRV_ETHPHY_VendorSMIWriteWaitComplete(hClientObj, PHY_MMD_ACCESS_DATA_ADDR, LAN8840_CLK_SKEW, phyAddress);
+                if(res < 0)
+                {   // some error
+                    return res;
+                }
+                skewState++;
+                pBaseObj->DRV_ETHPHY_VendorDataSet(hClientObj, skewState);
+                res = DRV_ETHPHY_RES_PENDING;
+            }
+            break;
+            
+        case DRV_LAN8840_SKEW_CLK_5:
+            // wait for write complete
+            res = pBaseObj->DRV_ETHPHY_VendorSMIOperationIsComplete(hClientObj);
+            if(res < 0)
+            {   // some error
+                return res;
+            }
+            else if(res != DRV_ETHPHY_RES_OK)
+            { 
+                res = DRV_ETHPHY_RES_PENDING;
+            }
+            break;
+    }
+    return res;
+}
