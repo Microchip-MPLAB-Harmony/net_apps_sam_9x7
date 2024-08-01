@@ -83,10 +83,7 @@ extern "C" {
 #define SYS_TIME_INDEX_0                            (0)
 #define SYS_TIME_MAX_TIMERS                         (5)
 #define SYS_TIME_HW_COUNTER_WIDTH                   (32)
-#define SYS_TIME_HW_COUNTER_PERIOD                  (4294967295U)
-#define SYS_TIME_HW_COUNTER_HALF_PERIOD             (SYS_TIME_HW_COUNTER_PERIOD>>1)
-#define SYS_TIME_CPU_CLOCK_FREQUENCY                (800000000)
-#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (470)
+#define SYS_TIME_TICK_FREQ_IN_HZ                    (1000.00249)
 
 #define SYS_CONSOLE_INDEX_0                       0
 
@@ -127,7 +124,7 @@ extern "C" {
 #define DRV_MIIM_INSTANCE_OPERATIONS        4
 #define DRV_MIIM_INSTANCE_CLIENTS           2
 #define DRV_MIIM_CLIENT_OP_PROTECTION   false
-#define DRV_MIIM_COMMANDS   false
+#define DRV_MIIM_COMMANDS   true
 #define DRV_MIIM_DRIVER_OBJECT              DRV_MIIM_OBJECT_BASE_Default            
 
 
@@ -182,7 +179,7 @@ extern "C" {
 #define TCPIP_TCP_AUTO_TRANSMIT_TIMEOUT_VAL			40
 #define TCPIP_TCP_WINDOW_UPDATE_TIMEOUT_VAL			200
 #define TCPIP_TCP_MAX_SOCKETS		                10
-#define TCPIP_TCP_TASK_TICK_RATE		        	5
+#define TCPIP_TCP_TASK_TICK_RATE		        	2
 #define TCPIP_TCP_MSL_TIMEOUT		        	    0
 #define TCPIP_TCP_QUIET_TIME		        	    0
 #define TCPIP_TCP_COMMANDS   false
@@ -255,10 +252,10 @@ extern "C" {
 
 /*** iperf Configuration ***/
 #define TCPIP_STACK_USE_IPERF
-#define TCPIP_IPERF_TX_BUFFER_SIZE		4096
-#define TCPIP_IPERF_RX_BUFFER_SIZE  	4096
+#define TCPIP_IPERF_TX_BUFFER_SIZE		64000
+#define TCPIP_IPERF_RX_BUFFER_SIZE  	64000
 #define TCPIP_IPERF_TX_WAIT_TMO     	100
-#define TCPIP_IPERF_TX_QUEUE_LIMIT  	2
+#define TCPIP_IPERF_TX_QUEUE_LIMIT  	10
 #define TCPIP_IPERF_TIMING_ERROR_MARGIN 0
 #define TCPIP_IPERF_MAX_INSTANCES       1
 #define TCPIP_IPERF_TX_BW_LIMIT  		1
@@ -279,7 +276,7 @@ extern "C" {
 
 /*** TCPIP Heap Configuration ***/
 #define TCPIP_STACK_USE_INTERNAL_HEAP
-#define TCPIP_STACK_DRAM_SIZE                       128000
+#define TCPIP_STACK_DRAM_SIZE                       7168000
 #define TCPIP_STACK_DRAM_RUN_LIMIT                  2048
 
 #define TCPIP_STACK_MALLOC_FUNC                     malloc
@@ -309,7 +306,7 @@ extern "C" {
 #define TCPIP_STACK_USE_TCP
 #define TCPIP_STACK_USE_UDP
 
-#define TCPIP_STACK_TICK_RATE		        		5
+#define TCPIP_STACK_TICK_RATE		        		2
 #define TCPIP_STACK_SECURE_PORT_ENTRIES             10
 #define TCPIP_STACK_LINK_RATE		        		333
 
@@ -342,15 +339,15 @@ extern "C" {
 #define TCPIP_GMAC_RX_BUFF_SIZE_DUMMY            64
 #define TCPIP_GMAC_TX_BUFF_SIZE_DUMMY            64
 /*** QUEUE 0 TX Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0            8
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0            40
 #define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE0                 1536
 /*** QUEUE 0 RX Configuration ***/
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0            8
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0            1024
 #define TCPIP_GMAC_RX_BUFF_SIZE_QUE0                    1536
-#define TCPIP_GMAC_RX_DEDICATED_BUFFERS_QUE0            8
-#define TCPIP_GMAC_RX_ADDL_BUFF_COUNT_QUE0              2
-#define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0         1
-#define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0             2
+#define TCPIP_GMAC_RX_DEDICATED_BUFFERS_QUE0            1024
+#define TCPIP_GMAC_RX_ADDL_BUFF_COUNT_QUE0              128
+#define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0         64
+#define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0             128
 /*** QUEUE 1 Not Enabled - Dummy Configuration ***/
 #define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE1             TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
 #define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE1                  0
@@ -421,8 +418,8 @@ extern "C" {
 
 #define TCPIP_INTMAC_PERIPHERAL_CLK                 266666666
 
-#define DRV_GMAC_RX_CHKSM_OFFLOAD               (TCPIP_MAC_CHECKSUM_NONE)           
-#define DRV_GMAC_TX_CHKSM_OFFLOAD               (TCPIP_MAC_CHECKSUM_NONE)       
+#define DRV_GMAC_RX_CHKSM_OFFLOAD             (TCPIP_MAC_CHECKSUM_TCP | TCPIP_MAC_CHECKSUM_UDP | TCPIP_MAC_CHECKSUM_IPV4)
+#define DRV_GMAC_TX_CHKSM_OFFLOAD               (TCPIP_MAC_CHECKSUM_TCP | TCPIP_MAC_CHECKSUM_UDP | TCPIP_MAC_CHECKSUM_IPV4) 
 #define TCPIP_GMAC_TX_PRIO_COUNT                1
 #define TCPIP_GMAC_RX_PRIO_COUNT                1
 #define DRV_GMAC_NUMBER_OF_QUEUES               6
@@ -434,8 +431,8 @@ extern "C" {
 /*** UDP Configuration ***/
 #define TCPIP_UDP_MAX_SOCKETS		                	10
 #define TCPIP_UDP_SOCKET_DEFAULT_TX_SIZE		    	512
-#define TCPIP_UDP_SOCKET_DEFAULT_TX_QUEUE_LIMIT    	 	3
-#define TCPIP_UDP_SOCKET_DEFAULT_RX_QUEUE_LIMIT			3
+#define TCPIP_UDP_SOCKET_DEFAULT_TX_QUEUE_LIMIT    	 	64
+#define TCPIP_UDP_SOCKET_DEFAULT_RX_QUEUE_LIMIT			500
 #define TCPIP_UDP_USE_POOL_BUFFERS   false
 #define TCPIP_UDP_USE_TX_CHECKSUM             			true
 #define TCPIP_UDP_USE_RX_CHECKSUM             			true

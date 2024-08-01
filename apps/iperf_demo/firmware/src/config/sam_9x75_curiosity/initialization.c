@@ -287,14 +287,14 @@ TCPIP_MODULE_GMAC_QUEUE_CONFIG  gmac_queue_config[DRV_GMAC_NUMBER_OF_QUEUES]=
    {   /** QUEUE 0 Initialization**/
        .queueTxEnable = true,
        .queueRxEnable = true,
-       .nRxDescCnt    = 8,
-       .nTxDescCnt    = 8,
+       .nRxDescCnt    = 1024,
+       .nTxDescCnt    = 40,
        .rxBufferSize  = 1536,
        .txMaxPktSize  = 1536,
-       .nRxDedicatedBuffers   = 8,
-       .nRxAddlBuffCount  = 2,
-       .nRxBuffCntThres   = 1,
-       .nRxBuffAllocCnt   = 2,   
+       .nRxDedicatedBuffers   = 1024,
+       .nRxAddlBuffCount  = 128,
+       .nRxBuffCntThres   = 64,
+       .nRxBuffAllocCnt   = 128,   
        .queueIntSrc       = GMAC_IRQn,                               
    },
    {   /** QUEUE 1 Initialization**/
@@ -430,8 +430,6 @@ static const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
     .timerStop = (SYS_TIME_PLIB_STOP)TC0_CH0_TimerStop ,
     .timerFrequencyGet = (SYS_TIME_PLIB_FREQUENCY_GET)TC0_CH0_TimerFrequencyGet,
     .timerPeriodSet = (SYS_TIME_PLIB_PERIOD_SET)TC0_CH0_TimerPeriodSet,
-    .timerCompareSet = (SYS_TIME_PLIB_COMPARE_SET)TC0_CH0_TimerCompareSet,
-    .timerCounterGet = (SYS_TIME_PLIB_COUNTER_GET)TC0_CH0_TimerCounterGet,
 };
 
 static const SYS_TIME_INIT sysTimeInitData =

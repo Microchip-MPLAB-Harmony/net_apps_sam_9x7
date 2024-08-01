@@ -4,20 +4,20 @@
 
 
 project: iperf_demo
-creation_date: 2024-07-02T15:55:54.740+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2024-08-01T18:44:11.845+05:30[Asia/Calcutta]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
 mcc_version: v5.5.1
 mcc_core_version: v5.7.1
 mplabx_version: v6.20        # if MPLAB X plugin only
 harmony_version: v1.5.2
-compiler: XC32 4.40
+compiler: XC32 4.45
 
 modules:
-    - {name: "csp", version: "v3.19.1"}
+    - {name: "csp", version: "v3.19.3"}
     - {name: "core", version: "v3.13.5"}
     - {name: "wolfssl", version: "v5.4.0"}
-    - {name: "net", version: "dev"}
+    - {name: "net", version: "v3.12.1"}
     - {name: "bsp", version: "v3.20.1"}
     - {name: "crypto", version: "v3.8.1"}
 
