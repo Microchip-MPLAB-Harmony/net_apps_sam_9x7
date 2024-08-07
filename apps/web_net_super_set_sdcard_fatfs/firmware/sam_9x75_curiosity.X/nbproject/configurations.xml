@@ -952,7 +952,7 @@
         <targetDevice>SAM9X75D2G</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ICD4Tool</platformTool>
+        <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
@@ -1137,9 +1137,9 @@
         <property key="wpo-lto" value="false"/>
       </C32Global>
       <ICD4Tool>
-        <property key="memories.programmemory.ranges" value="300000-eff00fff"/>
+        <property key="memories.programmemory.ranges" value="0x300000-0xeff00fff"/>
         <property key="programmerToGoFilePath"
-                  value="C:/harmony/h3/net_apps_sam_9x7/apps/web_net_super_set_sdcard_fatfs/firmware/sam_9x75_curiosity.X/debug/sam_9x75_curiosity/sam_9x75_curiosity_ptg"/>
+                  value="C:/harmony/h3/net_apps_sam_9x7/apps/tcpip_tcp_server/firmware/sam_9x75_curiosity.X/debug/sam_9x75_curiosity/sam_9x75_curiosity_ptg"/>
       </ICD4Tool>
       <PK5Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
@@ -1276,7 +1276,7 @@
         <property key="programoptions.program.otpconfig" value="false"/>
         <property key="programoptions.programcalmem" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
-        <property key="programoptions.resetafterprogram" value="true"/>
+        <property key="programoptions.resetafterprogram" value="false"/>
         <property key="programoptions.smart.program" value="When debugging only"/>
         <property key="programoptions.testmodeentrymethod" value="VDDFirst"/>
         <property key="ptgProgramImage" value="true"/>
@@ -1320,7 +1320,7 @@
         <property key="programoptions.preserveprogrammemory" value="false"/>
         <property key="programoptions.preserveprogrammemory.ranges"
                   value="0x300000-0xeff00fff"/>
-        <property key="programoptions.resetafterprogram" value="true"/>
+        <property key="programoptions.resetafterprogram" value="false"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>

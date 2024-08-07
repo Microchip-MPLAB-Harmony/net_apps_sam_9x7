@@ -180,7 +180,7 @@ void APP_Tasks ( void )
 
 #if defined TCPIP_STACK_USE_TELNET_SERVER
                 TCPIP_TELNET_HANDLE telH = TCPIP_TELNET_AuthenticationRegister(Telnet_AuthHandler, 0);
-                SYS_CONSOLE_PRINT("telnet aythentication registration: %s\r\n", (telH == 0) ? "Failed!" : "success");
+                SYS_CONSOLE_PRINT("telnet authentication registration: %s\r\n", (telH == 0) ? "Failed!" : "success");
 
 #endif  // defined TCPIP_STACK_USE_TELNET_SERVER
 #if (TCPIP_FTPS_OBSOLETE_AUTHENTICATION == 0)              

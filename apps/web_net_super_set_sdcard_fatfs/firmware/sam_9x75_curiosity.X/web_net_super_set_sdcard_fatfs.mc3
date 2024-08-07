@@ -3718,7 +3718,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;627&quot; canvasWidth=&quot;752&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;GraphSettings canvasHeight=&quot;720&quot; canvasWidth=&quot;1114&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;PowerProfiles dnOrder=&quot;1&quot;&gt;
       &lt;Profile dnOrder=&quot;0&quot; id=&quot;profile0&quot; name=&quot;Main&quot;/&gt;
     &lt;/PowerProfiles&gt;
@@ -17504,7 +17504,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipHttpNet&gt;
   &lt;tcpipHttpNet dnOrder=&quot;0&quot; id=&quot;TCPIP_HTTP_NET_HEAP_SIZE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipHttpNet&quot; value=&quot;6752&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipHttpNet&quot; value=&quot;4944&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tcpipHttpNet&gt;
 &lt;/tcpipHttpNet&gt;
@@ -17534,9 +17534,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipHttpNet" name="TCPIP_HTTP_NET_MAX_CONNECTIONS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipHttpNet&gt;
   &lt;tcpipHttpNet dnOrder=&quot;0&quot; id=&quot;TCPIP_HTTP_NET_MAX_CONNECTIONS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;8&quot;/&gt;
-    &lt;/Values&gt;
+    &lt;Values dnOrder=&quot;0&quot;/&gt;
   &lt;/tcpipHttpNet&gt;
 &lt;/tcpipHttpNet&gt;
 </value>
@@ -20748,7 +20746,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipStack&gt;
   &lt;tcpipStack dnOrder=&quot;0&quot; id=&quot;TCPIP_STACK_HEAP_SIZE_RECOMMEND&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipStack&quot; value=&quot;92&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipStack&quot; value=&quot;91&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tcpipStack&gt;
 &lt;/tcpipStack&gt;
@@ -21533,7 +21531,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
   &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_HEAP_SIZE&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; value=&quot;34824&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;tcpipTcp&quot; value=&quot;30024&quot;/&gt;
     &lt;/Values&gt;
   &lt;/tcpipTcp&gt;
 &lt;/tcpipTcp&gt;
@@ -22563,7 +22561,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity\configuration.h</file>
-         <hash>92af566d1cfca13494ce2428b80cfc276100fa01ead3a78255ea6abdc8241afe</hash>
+         <hash>6dd0a62c3c6a18082b5dd65d257eaf15e0525302f97227ed280fccc6691c43e7</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity\crypto\crypto.h</file>
@@ -22583,7 +22581,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity\definitions.h</file>
-         <hash>ab54cf73e33ec5f2c441142ebd52e026dc7526173ce96d27b74a0c413fbc3165</hash>
+         <hash>0b4cad58d791d0eeaf4ea7f10e7c298fded44c3f15d9a26db396409c66097ec9</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity\device.h</file>

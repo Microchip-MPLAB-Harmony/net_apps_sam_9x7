@@ -556,7 +556,7 @@ extern "C" {
 #define TCPIP_HTTP_NET_MAX_HEADER_LEN		    		15
 #define TCPIP_HTTP_NET_CACHE_LEN		        		"600"
 #define TCPIP_HTTP_NET_TIMEOUT		            		45
-#define TCPIP_HTTP_NET_MAX_CONNECTIONS		    		8
+#define TCPIP_HTTP_NET_MAX_CONNECTIONS		    		4
 #define TCPIP_HTTP_NET_DEFAULT_FILE		        		"index.htm"
 #define TCPIP_HTTP_NET_FILENAME_MAX_LEN			        25
 #define TCPIP_HTTP_NET_WEB_DIR		        		    "/mnt/mchpSite1/"
