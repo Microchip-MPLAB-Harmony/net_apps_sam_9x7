@@ -154,7 +154,7 @@ extern "C" {
 #define DRV_MIIM_INSTANCE_OPERATIONS        4
 #define DRV_MIIM_INSTANCE_CLIENTS           2
 #define DRV_MIIM_CLIENT_OP_PROTECTION   false
-#define DRV_MIIM_COMMANDS   false
+#define DRV_MIIM_COMMANDS   true
 #define DRV_MIIM_DRIVER_OBJECT              DRV_MIIM_OBJECT_BASE_Default            
 
 
@@ -191,7 +191,12 @@ extern "C" {
 #define TCPIP_ICMP_ECHO_REQUEST_TIMEOUT        500
 #define TCPIP_ICMP_TASK_TICK_RATE              33
 #define TCPIP_STACK_MAX_CLIENT_ECHO_REQUESTS   4
-#define TCPIP_ICMP_COMMAND_ENABLE              false
+#define TCPIP_ICMP_COMMAND_ENABLE              true
+#define TCPIP_STACK_COMMANDS_ICMP_ECHO_REQUESTS         4
+#define TCPIP_STACK_COMMANDS_ICMP_ECHO_REQUEST_DELAY    1000
+#define TCPIP_STACK_COMMANDS_ICMP_ECHO_TIMEOUT          5000
+#define TCPIP_STACK_COMMANDS_ICMP_ECHO_REQUEST_BUFF_SIZE    2000
+#define TCPIP_STACK_COMMANDS_ICMP_ECHO_REQUEST_DATA_SIZE    100
 
 /******************************************************************************/
 /*wolfSSL TLS Layer Configuration*/
@@ -234,7 +239,7 @@ extern "C" {
 #define TCPIP_TCP_TASK_TICK_RATE		        	5
 #define TCPIP_TCP_MSL_TIMEOUT		        	    0
 #define TCPIP_TCP_QUIET_TIME		        	    0
-#define TCPIP_TCP_COMMANDS   false
+#define TCPIP_TCP_COMMANDS   true
 #define TCPIP_TCP_EXTERN_PACKET_PROCESS   false
 #define TCPIP_TCP_DISABLE_CRYPTO_USAGE		        	    false
 
@@ -269,7 +274,7 @@ extern "C" {
 #define TCPIP_ARP_GRATUITOUS_PROBE_COUNT			1
 #define TCPIP_ARP_TASK_PROCESS_RATE		        	2000
 #define TCPIP_ARP_PRIMARY_CACHE_ONLY		        	true
-#define TCPIP_ARP_COMMANDS false
+#define TCPIP_ARP_COMMANDS true
 
 
 
@@ -364,7 +369,7 @@ extern "C" {
 #define TCPIP_TFTPS_DEFAULT_BLOCK_SIZE                  512
 #define TCPIP_TFTPS_DEFAULT_TIMEOUT                 	10
 #define TCPIP_TFTPS_FILENAME_LEN						64
-#define TCPIP_TFTPS_CONSOLE_CMD              	false
+#define TCPIP_TFTPS_CONSOLE_CMD               	true
 #define TCPIP_TFTPS_USER_NOTIFICATION					false
 #define TCPIP_TFTPS_MOUNT_POINT							"/mnt/mchpSite1/"
 
@@ -389,13 +394,14 @@ extern "C" {
 #define TCPIP_FTPC_MAX_NUM_CLIENT        3
 #define TCPIP_FTPC_DATA_SKT_TX_BUFF_SIZE_DFLT        0
 #define TCPIP_FTPC_DATA_SKT_RX_BUFF_SIZE_DFLT        0
+#define TCPIP_FTPC_COMMANDS  
 
 
 /*** IPv4 Configuration ***/
 #define TCPIP_IPV4_ARP_SLOTS                        10
 #define TCPIP_IPV4_EXTERN_PACKET_PROCESS   false
 
-#define TCPIP_IPV4_COMMANDS false
+#define TCPIP_IPV4_COMMANDS true
 
 #define TCPIP_IPV4_FORWARDING_ENABLE    false 
 
@@ -420,6 +426,7 @@ extern "C" {
 #define TCPIP_SMTPC_SKT_TX_BUFF_SIZE			    2048
 #define TCPIP_SMTPC_SKT_RX_BUFF_SIZE			    2048
 #define TCPIP_SMTPC_TASK_TICK_RATE			        55
+#define TCPIP_SMTPC_USE_MAIL_COMMAND
 
 
 
@@ -439,7 +446,7 @@ extern "C" {
 #define TCPIP_UDP_USE_POOL_BUFFERS   false
 #define TCPIP_UDP_USE_TX_CHECKSUM             			true
 #define TCPIP_UDP_USE_RX_CHECKSUM             			true
-#define TCPIP_UDP_COMMANDS   false
+#define TCPIP_UDP_COMMANDS   true
 #define TCPIP_UDP_EXTERN_PACKET_PROCESS   false
 
 
@@ -480,7 +487,7 @@ extern "C" {
 #define TCPIP_DNSS_TTL_TIME						600
 #define TCPIP_DNSS_TASK_PROCESS_RATE			33
 #define TCPIP_DNSS_DELETE_OLD_LEASE				true
-#define TCPIP_DNSS_CONSOLE_CMD           false
+#define TCPIP_DNSS_CONSOLE_CMD           true
 /***Maximum DNS server Cache entries. It is the sum of TCPIP_DNSS_CACHE_PER_IPV4_ADDRESS and TCPIP_DNSS_CACHE_PER_IPV6_ADDRESS.***/
 #define TCPIP_DNSS_CACHE_MAX_SERVER_ENTRIES     (TCPIP_DNSS_CACHE_PER_IPV4_ADDRESS + TCPIP_DNSS_CACHE_PER_IPV6_ADDRESS)
 
@@ -545,12 +552,6 @@ extern "C" {
 
 
 
-/*** NBNS Configuration ***/
-#define TCPIP_STACK_USE_NBNS
-#define TCPIP_NBNS_TASK_TICK_RATE   110
-
-
-
 /*** HTTP NET Configuration ***/
 #define TCPIP_STACK_USE_HTTP_NET_SERVER
 #define TCPIP_HTTP_NET_MAX_HEADER_LEN		    		15
@@ -597,6 +598,12 @@ extern "C" {
 #define TCPIP_HTTP_NET_MALLOC_FUNC                  malloc
 #define TCPIP_HTTP_NET_FREE_FUNC                    free
 #define TCPIP_HTTP_NET_CONSOLE_CMD           		false
+
+
+
+/*** NBNS Configuration ***/
+#define TCPIP_STACK_USE_NBNS
+#define TCPIP_NBNS_TASK_TICK_RATE   110
 
 
 
@@ -864,7 +871,7 @@ extern "C" {
 #define TCPIP_TFTPC_DEFAULT_IF                  "GMAC"
 #define TCPIP_TFTPC_SERVERADDRESS_LEN           40
 #define TCPIP_TFTPC_FILENAME_LEN                32
-#define TCPIP_TFTPC_CONSOLE_CMD           		false
+#define TCPIP_TFTPC_CONSOLE_CMD           		true
 #define TCPIP_TFTPC_USER_NOTIFICATION   false
 #define TCPIP_TFTPC_TASK_TICK_RATE              100
 #define TCPIP_TFTPC_CMD_PROCESS_TIMEOUT         3
