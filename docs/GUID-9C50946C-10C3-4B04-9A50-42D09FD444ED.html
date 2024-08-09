@@ -1,5 +1,5 @@
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" data-whc_version="24.1">
-    <head><link rel="shortcut icon" href="oxygen-webhelp\template\resources/images/favicon.ico"/><link rel="icon" href="oxygen-webhelp\template\resources/images/favicon.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="MPU Harmony3 applications are compiled and linked to execute from external DRAM memory that is available on the corresponding evaluation kit. This require all peripherals and clock leading to the DRAM ..."/><meta name="copyright" content="(C) Copyright 2023"/><meta name="generator" content="DITA-OT"/><title>2.1 Using at91boostrap loader with Harmony3 MPU applications</title><!--  Generated with Oxygen version 24.1, build number 2022062014.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED-d387e164"/><meta name="wh-source-relpath" content="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED.xml"/><meta name="wh-out-relpath" content="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED.html"/>
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\resources/images/favicon.ico"/><link rel="icon" href="oxygen-webhelp\template\resources/images/favicon.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="MPU Harmony3 applications are compiled and linked to execute from external DRAM memory that is available on the corresponding evaluation kit. This require all peripherals and clock leading to the DRAM ..."/><meta name="copyright" content="(C) Copyright 2024"/><meta name="generator" content="DITA-OT"/><title>2.1 Using at91boostrap loader with Harmony3 MPU applications</title><!--  Generated with Oxygen version 24.1, build number 2022062014.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED-d383e164"/><meta name="wh-source-relpath" content="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED.xml"/><meta name="wh-out-relpath" content="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED.html"/>
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
     
@@ -33,8 +33,9 @@
             <div class="wh_logo_and_publication_title_container">
                 <div class="wh_logo_and_publication_title">
                     
-                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="oxygen-webhelp\template\resources/images/microchip.png" alt="MPLAB® Harmony 3 TCP/IP Application for SAM 9X7 Family "/></a>
-                    <div class=" wh_publication_title "><a href="index.html">MPLAB® Harmony 3 TCP/IP Application for SAM 9X7 Family </a></div>
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="oxygen-webhelp\template\resources/images/microchip.png" alt="MPLAB® Harmony 3 TCP/IP Application for SAM 9X7 Family &#xA;    "/></a>
+                    <div class=" wh_publication_title "><a href="index.html">MPLAB® Harmony 3 TCP/IP Application for SAM 9X7 Family 
+    </a></div>
                     
                 </div>
                 
@@ -96,7 +97,8 @@ Using at91boostrap loader with Harmony3 MPU applications</a></div></div></li></o
                 </nav>
             </div>
             
-            
+            <div class="row" style="margin-top: -1em;"><div class="col-lg-7 col-md-7 col-sm-12 offset-lg-3 offset-md-3 text-right border-bottom mb-1"><h2 class="text-dark header_title">
+    </h2></div></div>
             
             
             <div class="wh_content_area">
@@ -105,13 +107,13 @@ Using at91boostrap loader with Harmony3 MPU applications</a></div></div></li></o
                         <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
                             <div id="wh_publication_toc_content">
 		                        
-                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="false"><div data-tocid="GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525-d387e11" class="topicref" data-id="GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525-d387e11-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525.html" id="GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525-d387e11-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">1</ph>
-Harmony 3 TCP/IP Application for SAM 9X7 Family</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D-d387e156" class="topicref" data-id="GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D-d387e156-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D.html" id="GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D-d387e156-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2</ph>
-Appendix</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" class="active"><div data-tocid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED-d387e164" class="topicref" data-id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED.html" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED-d387e164-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.1</ph>
-Using at91boostrap loader with Harmony3 MPU applications</a></div></div></li><li role="treeitem"><div data-tocid="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6-d387e172" class="topicref" data-id="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6.html" id="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6-d387e172-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.2</ph>
-Building at91bootstrap project using MPLABX</a></div></div></li><li role="treeitem"><div data-tocid="GUID-329DD925-82EC-45DD-8551-6F024BC99257-d387e180" class="topicref" data-id="GUID-329DD925-82EC-45DD-8551-6F024BC99257" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-329DD925-82EC-45DD-8551-6F024BC99257.html" id="GUID-329DD925-82EC-45DD-8551-6F024BC99257-d387e180-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.3</ph>
-MPLAB X Integrated Development Environment</a></div></div></li><li role="treeitem"><div data-tocid="GUID-FBAB7A5A-AA24-4557-9B2F-70999207D370-d387e188" class="topicref" data-id="GUID-FBAB7A5A-AA24-4557-9B2F-70999207D370" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-FBAB7A5A-AA24-4557-9B2F-70999207D370.html" id="GUID-FBAB7A5A-AA24-4557-9B2F-70999207D370-d387e188-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.4</ph>
-MPLAB Code Configurator</a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d387e196" class="topicref backmatter backmatter_parent" data-id="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d387e196-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B.html" id="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d387e196-link">Microchip Information</a></div></div></li></ul></div>
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="false"><div data-tocid="GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525-d383e11" class="topicref" data-id="GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525-d383e11-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525.html" id="GUID-097DBF27-0DFE-4821-8C81-E0DCC8425525-d383e11-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">1</ph>
+Harmony 3 TCP/IP Application for SAM 9X7 Family</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D-d383e156" class="topicref" data-id="GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D-d383e156-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D.html" id="GUID-8670F112-D806-419C-BE6C-E2A6F7A1293D-d383e156-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2</ph>
+Appendix</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" class="active"><div data-tocid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED-d383e164" class="topicref" data-id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED.html" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED-d383e164-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.1</ph>
+Using at91boostrap loader with Harmony3 MPU applications</a></div></div></li><li role="treeitem"><div data-tocid="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6-d383e172" class="topicref" data-id="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6.html" id="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6-d383e172-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.2</ph>
+Building at91bootstrap project using MPLABX</a></div></div></li><li role="treeitem"><div data-tocid="GUID-329DD925-82EC-45DD-8551-6F024BC99257-d383e180" class="topicref" data-id="GUID-329DD925-82EC-45DD-8551-6F024BC99257" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-329DD925-82EC-45DD-8551-6F024BC99257.html" id="GUID-329DD925-82EC-45DD-8551-6F024BC99257-d383e180-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.3</ph>
+MPLAB X Integrated Development Environment</a></div></div></li><li role="treeitem"><div data-tocid="GUID-FBAB7A5A-AA24-4557-9B2F-70999207D370-d383e188" class="topicref" data-id="GUID-FBAB7A5A-AA24-4557-9B2F-70999207D370" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-FBAB7A5A-AA24-4557-9B2F-70999207D370.html" id="GUID-FBAB7A5A-AA24-4557-9B2F-70999207D370-d383e188-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.4</ph>
+MPLAB Code Configurator</a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d383e196" class="topicref backmatter backmatter_parent" data-id="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d383e196-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B.html" id="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d383e196-link">Microchip Information</a></div></div></li></ul></div>
 		                        
                             </div>
                         </nav>
@@ -129,63 +131,30 @@ MPLAB Code Configurator</a></div></div></li></ul></li><li role="treeitem" aria-e
                             </span>
                         </button>
                         
-                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-3C4D8890-255B-4754-B97F-CEB02FAC3044">
-    <h1 class="- topic/title title topictitle1" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-3C4D8890-255B-4754-B97F-CEB02FAC3044" style="">2.1 Using at91boostrap loader with Harmony3
-        MPU applications</h1>
-    <div class="- topic/body body">
-        <p class="- topic/p p">MPU Harmony3 applications are compiled and linked to execute from external DRAM memory
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-3C4D8890-255B-4754-B97F-CEB02FAC3044"><h1 class="- topic/title title topictitle1" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-3C4D8890-255B-4754-B97F-CEB02FAC3044" style="">2.1 Using at91boostrap loader with Harmony3
+        MPU applications</h1><div class="- topic/body body"><p class="- topic/p p">MPU Harmony3 applications are compiled and linked to execute from external DRAM memory
             that is available on the corresponding evaluation kit. This require all peripherals and
             clock leading to the DRAM memory to be configured prior to the application being
-            programmed into DRAM. This is achieved using a bootstrap loader. We use <a class="- topic/xref xref" href="https://github.com/linux4sam/at91bootstrap" target="_blank" rel="external noopener">at91bootstrap</a> loader for this purpose.</p>
-        <p class="- topic/p p">We have deployed the following pre-built bootstrap binaries inside our application
+            programmed into DRAM. This is achieved using a bootstrap loader. We use <a class="- topic/xref xref" href="https://github.com/linux4sam/at91bootstrap" target="_blank" rel="external noopener">at91bootstrap</a> loader for this purpose.</p><p class="- topic/p p">We have deployed the following pre-built bootstrap binaries inside our application
             repositories. They can be found under <strong class="+ topic/ph hi-d/b ph b">deps </strong>folder at the root of the
-            repository.</p>
-        <div class="table-container"><table class="- topic/table table" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><thead class="- topic/thead thead">
-                    <tr class="- topic/row">
-                        <th class="- topic/entry entry colsep-0 rowsep-0" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__1">Binary Name</th>
-                        <th class="- topic/entry entry colsep-0 rowsep-0" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__2">Description</th>
-                    </tr>
-                </thead><tbody class="- topic/tbody tbody">
-                    <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__1">at91bootstrap.elf</td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__2">Bootstrap which allows debug or run application using MPLABX</td>
-                    </tr>
-                    <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__1">boot.bin</td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__2">Bootstrap which allows booting application using an SD Card</td>
-                    </tr>
-                </tbody></table></div>
-        <p class="- topic/p p">To use at91boostrap to load and run harmony applications from MPLABX, it should be build
+            repository.</p><div class="table-container"><table class="- topic/table table" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__1">Binary Name</th><th class="- topic/entry entry colsep-0 rowsep-0" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__2">Description</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__1">at91bootstrap.elf</td><td class="- topic/entry entry colsep-0 rowsep-0" headers="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__2">Bootstrap which allows debug or run application using MPLABX</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__1">boot.bin</td><td class="- topic/entry entry colsep-0 rowsep-0" headers="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__TABLE_FBP_CHB_NZB__entry__2">Bootstrap which allows booting application using an SD Card</td></tr></tbody></table></div><p class="- topic/p p">To use at91boostrap to load and run harmony applications from MPLABX, it should be build
             with "bkpt_none_defconfig" configuration. If you are interested in building
-            at91bootstrap using MPLABX, you can read about it <a class="- topic/xref xref" href="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6.html">here</a>.</p>
-        <section class="- topic/section section" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_JWR_3LT_15B" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_JWR_3LT_15B"><h2 class="- topic/title title sectiontitle">Configure a debug
-                tool</h2><ul class="- topic/ul ul" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_B1C_5XZ_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_B1C_5XZ_NZB">
-                <li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-E7644906-6927-4998-B2CF-31D4DE7B41E6" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-E7644906-6927-4998-B2CF-31D4DE7B41E6">Open the MPLABX applicaton that
-                    you want to debug or run in MPLABX.</li>
-                <li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-83390E09-3BC0-486D-9B1B-2EFFF589D898" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-83390E09-3BC0-486D-9B1B-2EFFF589D898">Right click on the application
+            at91bootstrap using MPLABX, you can read about it <a class="- topic/xref xref" href="GUID-CC51F30D-C2F1-4F70-B1A2-EE5D618DD4B6.html">here</a>.</p><section class="- topic/section section" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_JWR_3LT_15B" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_JWR_3LT_15B"><h2 class="- topic/title title sectiontitle">Configure a debug
+                tool</h2><ul class="- topic/ul ul" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_B1C_5XZ_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_B1C_5XZ_NZB"><li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-E7644906-6927-4998-B2CF-31D4DE7B41E6" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-E7644906-6927-4998-B2CF-31D4DE7B41E6">Open the MPLABX applicaton that
+                    you want to debug or run in MPLABX.</li><li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-83390E09-3BC0-486D-9B1B-2EFFF589D898" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-83390E09-3BC0-486D-9B1B-2EFFF589D898">Right click on the application
                     project and select properties. This will open the properties window. In the
-                    configuration option --&gt; connected hardware tools, select the debugger.</li>
-            </ul><div class=""><img class="- topic/image image" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__IMAGE_C1C_5XZ_NZB" src="GUID-E06BFA8A-DE49-4F1F-9F37-4D862F846164-high.png" width="800"/></div><p class="- topic/p p"><em class="+ topic/ph hi-d/i ph i">Note: if no debugger is connected, click on the "show all" check
-                    box and select the supported debugger</em></p><ul class="- topic/ul ul" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_D1C_5XZ_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_D1C_5XZ_NZB">
-                <li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-261BAA00-652F-4301-A0AB-48C4DDD11AEF" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-261BAA00-652F-4301-A0AB-48C4DDD11AEF">Select the target toolchain and
-                    click on apply to save the changes</li>
-                <li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-73383C09-952F-4CA8-B6EA-0A7F271316CC" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-73383C09-952F-4CA8-B6EA-0A7F271316CC">This will result in an additional
+                    configuration option --&gt; connected hardware tools, select the debugger.</li></ul><div class=""><img class="- topic/image image" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__IMAGE_C1C_5XZ_NZB" src="GUID-E06BFA8A-DE49-4F1F-9F37-4D862F846164-high.png" width="600"/></div><p class="- topic/p p"><em class="+ topic/ph hi-d/i ph i">Note: if no debugger is connected, click on the "show all" check
+                    box and select the supported debugger</em></p><ul class="- topic/ul ul" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_D1C_5XZ_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_D1C_5XZ_NZB"><li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-261BAA00-652F-4301-A0AB-48C4DDD11AEF" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-261BAA00-652F-4301-A0AB-48C4DDD11AEF">Select the target toolchain and
+                    click on apply to save the changes</li><li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-73383C09-952F-4CA8-B6EA-0A7F271316CC" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-73383C09-952F-4CA8-B6EA-0A7F271316CC">This will result in an additional
                     menu option to be available in the configuration tree view called "bootstrap" as
-                    shown below:</li>
-            </ul><div class=""><img class="- topic/image image" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__IMAGE_E1C_5XZ_NZB" src="GUID-8994DD4E-EE19-4E3A-83BA-8A42B511BEFB-high.png" width="800"/></div></section>
-        <section class="- topic/section section" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_TVX_2G5_15B" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_TVX_2G5_15B"><h2 class="- topic/title title sectiontitle">Configure bootstrap</h2><ul class="- topic/ul ul" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_F1C_5XZ_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_F1C_5XZ_NZB">
-                <li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-CD4239D9-7DB7-41C5-A464-3BD8E9878937" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-CD4239D9-7DB7-41C5-A464-3BD8E9878937">Click on "Use bootstrap" check
-                    box to enable bootstrap support</li>
-                <li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-30C585A5-71F6-4D1B-8AB2-6002C5F596F9" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-30C585A5-71F6-4D1B-8AB2-6002C5F596F9">Click on the "LOAD" button to
+                    shown below:</li></ul><div class=""><img class="- topic/image image" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__IMAGE_E1C_5XZ_NZB" src="GUID-8994DD4E-EE19-4E3A-83BA-8A42B511BEFB-high.png" width="600"/></div></section><section class="- topic/section section" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_TVX_2G5_15B" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_TVX_2G5_15B"><h2 class="- topic/title title sectiontitle">Configure bootstrap</h2><ul class="- topic/ul ul" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_F1C_5XZ_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_F1C_5XZ_NZB"><li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-CD4239D9-7DB7-41C5-A464-3BD8E9878937" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-CD4239D9-7DB7-41C5-A464-3BD8E9878937">Click on "Use bootstrap" check
+                    box to enable bootstrap support</li><li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-30C585A5-71F6-4D1B-8AB2-6002C5F596F9" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-30C585A5-71F6-4D1B-8AB2-6002C5F596F9">Click on the "LOAD" button to
                     load the bootstrap file. This will open a file picker, which allows you to
-                    choose the bootstrap binary file.</li>
-                <li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-36FE34ED-B70E-423F-9FFC-B2D1C1DA28E8" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-36FE34ED-B70E-423F-9FFC-B2D1C1DA28E8">Navigate to the “{repository
+                    choose the bootstrap binary file.</li><li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-36FE34ED-B70E-423F-9FFC-B2D1C1DA28E8" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-36FE34ED-B70E-423F-9FFC-B2D1C1DA28E8">Navigate to the “{repository
                     root}\deps\at91bootstrap_{board name}_binaries” folder as explained in the
                     previous section. You should choose "at91bootstrap.elf" file (The "Bootstrap
                     entry address" and the "Bootstrap load address" text box can be left empty as
-                    this information will be read from the ELF file automatically)</li>
-            </ul><div class=""><img class="- topic/image image" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__IMAGE_G1C_5XZ_NZB" src="GUID-DB00D5C6-74E3-4791-A5F3-DA3F80DB8E47-high.png" width="800"/></div></section>
-        <section class="- topic/section section" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_M5S_ZQ5_15B" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_M5S_ZQ5_15B"><h2 class="- topic/title title sectiontitle">Run/Debug MPU applications using
+                    this information will be read from the ELF file automatically)</li></ul><div class=""><img class="- topic/image image" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__IMAGE_G1C_5XZ_NZB" src="GUID-DB00D5C6-74E3-4791-A5F3-DA3F80DB8E47-high.png" width="600"/></div></section><section class="- topic/section section" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_M5S_ZQ5_15B" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_M5S_ZQ5_15B"><h2 class="- topic/title title sectiontitle">Run/Debug MPU applications using
                 MPLABX</h2>
             
             <p class="- topic/p p">You can now Run/Debug the MPU application just like any other MPLABX applications.
@@ -196,12 +165,9 @@ MPLAB Code Configurator</a></div></div></li></ul></li><li role="treeitem" aria-e
                 perform actions like setting breakpoints, single-stepping etc.</p>
             <p class="- topic/p p">When using MPLABX to debug a harmony application, you will face the following
                 limitations:</p>
-            <ul class="- topic/ul ul" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_H1C_5XZ_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_H1C_5XZ_NZB">
-                <li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-EEA71308-9722-466D-B8E6-6DEC8ABF96B7" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-EEA71308-9722-466D-B8E6-6DEC8ABF96B7">Call stack is not fully supported
-                    yet, hence stepping in and out of functions may not work correctly.</li>
-            </ul>
-        </section>
-        <section class="- topic/section section" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_SNC_CKV_15B" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_SNC_CKV_15B"><h2 class="- topic/title title sectiontitle">Boot to application using SD
+            <ul class="- topic/ul ul" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_H1C_5XZ_NZB" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__UL_H1C_5XZ_NZB"><li class="- topic/li li" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-EEA71308-9722-466D-B8E6-6DEC8ABF96B7" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__GUID-EEA71308-9722-466D-B8E6-6DEC8ABF96B7">Call stack is not fully supported
+                    yet, hence stepping in and out of functions may not work correctly.</li></ul>
+        </section><section class="- topic/section section" id="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_SNC_CKV_15B" data-ofbid="GUID-9C50946C-10C3-4B04-9A50-42D09FD444ED__SECTION_SNC_CKV_15B"><h2 class="- topic/title title sectiontitle">Boot to application using SD
                 card</h2>
             
             <p class="- topic/p p">Copy both the application binary named "harmony.bin" and the bootstrap binary named
@@ -211,9 +177,7 @@ MPLAB Code Configurator</a></div></div></li></ul></li><li role="treeitem" aria-e
                 and executes it. The bootstrap will configure the external DRAM and the required
                 peripherals, then copy the applicaton binary "harmony.bin" into the DRAM and
                 executes it.</p>
-        </section>
-    </div>
-</article></main></div>
+        </section></div></article></main></div>
                         
                         
                         
@@ -239,7 +203,7 @@ MPLAB Code Configurator</a></div></div></li></ul></li><li role="treeitem" aria-e
             
             
         </div> 
-        <div class="mchp_disclaimer"><p class="mchp_disclaimer_text">The online versions of the documents are provided as a courtesy. Verify all content and data in the device’s PDF documentation found on the device product page.</p></div><footer class="navbar navbar-default wh_footer">
+        <footer class="navbar navbar-default wh_footer">
   <div class=" footer-container mx-auto ">
     <div class="footer">
   <div class="mchp-wh-footer">
@@ -350,6 +314,7 @@ MPLAB Code Configurator</a></div></div></li></ul></li><li role="treeitem" aria-e
   </script>
   
   <script type="text/javascript">_satellite.pageBottom();</script><!-- Adobe Analytics -->
+  <script type="text/javascript" src="mchp-js/prepend.js"></script><!-- Package for viewing PDFs on mobile devices -->
   
 </div>
   </div>
