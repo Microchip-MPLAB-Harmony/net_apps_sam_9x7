@@ -4436,7 +4436,7 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;705&quot; canvasWidth=&quot;769&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;GraphSettings canvasHeight=&quot;156&quot; canvasWidth=&quot;531&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;PowerProfiles dnOrder=&quot;1&quot;&gt;
       &lt;Profile dnOrder=&quot;0&quot; id=&quot;profile0&quot; name=&quot;Main&quot;/&gt;
     &lt;/PowerProfiles&gt;
@@ -9097,7 +9097,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvMiim" name="DRV_MIIM_COMMANDS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvMiim&gt;
   &lt;drvMiim dnOrder=&quot;0&quot; id=&quot;DRV_MIIM_COMMANDS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/drvMiim&gt;
 &lt;/drvMiim&gt;
 </value>
@@ -15580,7 +15582,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipArp" name="TCPIP_ARP_COMMANDS_ENABLE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipArp&gt;
   &lt;tcpipArp dnOrder=&quot;0&quot; id=&quot;TCPIP_ARP_COMMANDS_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipArp&gt;
 &lt;/tcpipArp&gt;
 </value>
@@ -17836,7 +17840,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipDnss" name="TCPIP_DNSS_CONSOLE_CMD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipDnss&gt;
   &lt;tcpipDnss dnOrder=&quot;0&quot; id=&quot;TCPIP_DNSS_CONSOLE_CMD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipDnss&gt;
 &lt;/tcpipDnss&gt;
 </value>
@@ -17919,7 +17925,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipFtpc" name="TCPIP_FTPC_COMMANDS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipFtpc&gt;
   &lt;tcpipFtpc dnOrder=&quot;0&quot; id=&quot;TCPIP_FTPC_COMMANDS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipFtpc&gt;
 &lt;/tcpipFtpc&gt;
 </value>
@@ -18247,7 +18255,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipHttpNet" name="TCPIP_HTTP_NET_CONSOLE_CMD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipHttpNet&gt;
   &lt;tcpipHttpNet dnOrder=&quot;0&quot; id=&quot;TCPIP_HTTP_NET_CONSOLE_CMD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipHttpNet&gt;
 &lt;/tcpipHttpNet&gt;
 </value>
@@ -18729,7 +18739,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipIPv4" name="TCPIP_IPV4_COMMANDS_ENABLE"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipIPv4&gt;
   &lt;tcpipIPv4 dnOrder=&quot;0&quot; id=&quot;TCPIP_IPV4_COMMANDS_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipIPv4&gt;
 &lt;/tcpipIPv4&gt;
 </value>
@@ -20780,7 +20792,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipSmtpc" name="TCPIP_SMTPC_USE_MAIL_COMMAND"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipSmtpc&gt;
   &lt;tcpipSmtpc dnOrder=&quot;0&quot; id=&quot;TCPIP_SMTPC_USE_MAIL_COMMAND&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipSmtpc&gt;
 &lt;/tcpipSmtpc&gt;
 </value>
@@ -22401,7 +22415,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTcp" name="TCPIP_TCP_COMMANDS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTcp&gt;
   &lt;tcpipTcp dnOrder=&quot;0&quot; id=&quot;TCPIP_TCP_COMMANDS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipTcp&gt;
 &lt;/tcpipTcp&gt;
 </value>
@@ -22776,7 +22792,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTftpc" name="TCPIP_TFTPC_CONSOLE_CMD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTftpc&gt;
   &lt;tcpipTftpc dnOrder=&quot;0&quot; id=&quot;TCPIP_TFTPC_CONSOLE_CMD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipTftpc&gt;
 &lt;/tcpipTftpc&gt;
 </value>
@@ -22886,7 +22904,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipTftps" name="TCPIP_TFTPS_CONSOLE_CMD"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipTftps&gt;
   &lt;tcpipTftps dnOrder=&quot;0&quot; id=&quot;TCPIP_TFTPS_CONSOLE_CMD&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipTftps&gt;
 &lt;/tcpipTftps&gt;
 </value>
@@ -22987,7 +23007,9 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="tcpipUdp" name="TCPIP_UDP_COMMANDS"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;tcpipUdp&gt;
   &lt;tcpipUdp dnOrder=&quot;0&quot; id=&quot;TCPIP_UDP_COMMANDS&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
   &lt;/tcpipUdp&gt;
 &lt;/tcpipUdp&gt;
 </value>
@@ -23490,7 +23512,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\configuration.h</file>
-         <hash>f6dc4239ff88f1aa83c4d90a3543c17ce83dfffc513d60f0420d7f0ad759edf0</hash>
+         <hash>611eaa72f219b91a23afd61d71477eed5c5d3e69518dab4e03849fad2b00f77e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\crypto\crypto.h</file>
@@ -23718,7 +23740,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\ipv6.h</file>
-         <hash>b675c4df60b778005ba0cde22d44a25d8baf0991f631747d9f377830f0271f1f</hash>
+         <hash>a4748496db76d2c0fca2fc462666e934bc8067b496fcdc46a5b2f43b0be90f1f</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\lldp.h</file>
@@ -23958,7 +23980,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\ipv6.c</file>
-         <hash>8c73e8c60751468a6ee203f6ba3df9b9d5f5af3d1f69594d8fbf745a28cc126e</hash>
+         <hash>cfb973894177e23fdcdef1d801e878157603b33b649e5d47864801cea237b97e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\ipv6_manager.h</file>
@@ -24246,7 +24268,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\tcpip_mac.h</file>
-         <hash>7137ed6478803b511ada20f717583d7168e680c784b6d6c42dbaa75e4b928ea1</hash>
+         <hash>9622e737678d0333a496018e8d4191762002c8550528d681e1b85d21b53b873b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\tcpip_mac_bridge.h</file>
