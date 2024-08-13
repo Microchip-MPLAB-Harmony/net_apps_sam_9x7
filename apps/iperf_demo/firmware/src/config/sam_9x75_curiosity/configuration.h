@@ -453,6 +453,8 @@ extern "C" {
 #define DRV_ETHPHY_LAN8840_NEG_DONE_TMO        2000
 #define DRV_ETHPHY_LAN8840_RESET_CLR_TMO       500
 
+#define DRV_ETHPHY_LAN8840_SKEW_SETTING
+#define DRV_ETHPHY_LAN8840_TX_CLK_SKEW       0x12
 
 
 /*** wolfCrypt Library Configuration ***/
@@ -498,6 +500,7 @@ extern "C" {
 #define SINGLE_THREADED
 #define NO_SIG_WRAPPER
 #define NO_ERROR_STRINGS
+#define WOLFSSL_MAX_ERROR_SZ 38 // Fix Mandatory Misra 21.18 caused by removing error strings with defining NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY
 // ---------- FUNCTIONAL CONFIGURATION END ----------
 
