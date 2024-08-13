@@ -322,6 +322,8 @@ extern "C" {
 #define DRV_ETHPHY_LAN8840_NEG_DONE_TMO        2000
 #define DRV_ETHPHY_LAN8840_RESET_CLR_TMO       500
 
+#define DRV_ETHPHY_LAN8840_SKEW_SETTING
+#define DRV_ETHPHY_LAN8840_TX_CLK_SKEW       0x12
 
 
 	/*** tcpip_cmd Configuration ***/
