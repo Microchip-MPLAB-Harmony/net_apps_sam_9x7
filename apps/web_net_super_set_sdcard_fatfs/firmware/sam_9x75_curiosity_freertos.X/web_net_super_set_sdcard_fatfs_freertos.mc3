@@ -6283,6 +6283,33 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvExtPhyLan8840" name="DRV_ETHPHY_TX_CLK_SKEW"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvExtPhyLan8840&gt;
+  &lt;drvExtPhyLan8840 dnOrder=&quot;0&quot; id=&quot;DRV_ETHPHY_TX_CLK_SKEW&quot;&gt;
+    &lt;Attributes dnOrder=&quot;0&quot;&gt;
+      &lt;Boolean dnOrder=&quot;0&quot; id=&quot;visible&quot;&gt;
+        &lt;Value dnOrder=&quot;0&quot;&gt;true&lt;/Value&gt;
+      &lt;/Boolean&gt;
+    &lt;/Attributes&gt;
+    &lt;Values dnOrder=&quot;1&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;18&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/drvExtPhyLan8840&gt;
+&lt;/drvExtPhyLan8840&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvExtPhyLan8840" name="DRV_ETHPHY_TX_CLK_SKEW_SET"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvExtPhyLan8840&gt;
+  &lt;drvExtPhyLan8840 dnOrder=&quot;0&quot; id=&quot;DRV_ETHPHY_TX_CLK_SKEW_SET&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;true&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/drvExtPhyLan8840&gt;
+&lt;/drvExtPhyLan8840&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="drvExtPhyLan8840" name="DRV_ETHPHY_USE_RESET_CALLBACK"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;drvExtPhyLan8840&gt;
   &lt;drvExtPhyLan8840 dnOrder=&quot;0&quot; id=&quot;DRV_ETHPHY_USE_RESET_CALLBACK&quot;&gt;
@@ -23512,15 +23539,15 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\configuration.h</file>
-         <hash>611eaa72f219b91a23afd61d71477eed5c5d3e69518dab4e03849fad2b00f77e</hash>
+         <hash>742cb27cefb1b73772da6daf5fab9ccf034b7e94f378759295f45e90516f5f96</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\crypto\crypto.h</file>
-         <hash>89d2747602540d5216047edf6aaaa8e4bcf092c4a8b3ee2b700f1a7237514f57</hash>
+         <hash>63bc6589b6538aeb76bc00351d3b99016c8357699c9403067f79a7f43461d208</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\crypto\src\crypto.c</file>
-         <hash>4d62f32e7abe92e85613c095176465c1a0a92e207eb85f050730f8c45039bfa5</hash>
+         <hash>4c1b271685e092105d8271ee0615ac36c95abbea944b3e3c8e5bc194da00c014</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\cstartup.S</file>
@@ -23564,11 +23591,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\driver\ethphy\src\dynamic\drv_extphy_lan8840.c</file>
-         <hash>3b7fd9f9eca6223886c83de690cb56d2388a3e39cab00e9e5caf217681eb56de</hash>
+         <hash>7aa8d5039703f4b48d1dbade4d0b743441d2e269c3a65d09884e08e3798ea55c</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\driver\ethphy\src\dynamic\drv_extphy_lan8840.h</file>
-         <hash>e4f4aab0963f67646f06e881d3bfe16b448207af86959e5f9f51c97ac0daaee6</hash>
+         <hash>1f20962a81e08c185696b3dfb2a556daef6697aad55f1f62431728ca782e25b1</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\driver\ethphy\src\dynamic\drv_extphy_regs.h</file>
