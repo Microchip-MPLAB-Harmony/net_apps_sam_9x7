@@ -217,6 +217,7 @@ extern "C" {
 #define WOLFSSL_DTLS
 #define NO_PWDBASED
 #define NO_ERROR_STRINGS
+#define WOLFSSL_MAX_ERROR_SZ 38 // Fix Mandatory Misra 21.18 caused by removing error strings with defining NO_ERROR_STRINGS
 #define NO_OLD_TLS
 
 
@@ -552,6 +553,12 @@ extern "C" {
 
 
 
+/*** NBNS Configuration ***/
+#define TCPIP_STACK_USE_NBNS
+#define TCPIP_NBNS_TASK_TICK_RATE   110
+
+
+
 /*** HTTP NET Configuration ***/
 #define TCPIP_STACK_USE_HTTP_NET_SERVER
 #define TCPIP_HTTP_NET_MAX_HEADER_LEN		    		15
@@ -598,12 +605,6 @@ extern "C" {
 #define TCPIP_HTTP_NET_MALLOC_FUNC                  malloc
 #define TCPIP_HTTP_NET_FREE_FUNC                    free
 #define TCPIP_HTTP_NET_CONSOLE_CMD           		false
-
-
-
-/*** NBNS Configuration ***/
-#define TCPIP_STACK_USE_NBNS
-#define TCPIP_NBNS_TASK_TICK_RATE   110
 
 
 
@@ -893,6 +894,8 @@ extern "C" {
 #define DRV_ETHPHY_LAN8840_NEG_DONE_TMO        2000
 #define DRV_ETHPHY_LAN8840_RESET_CLR_TMO       500
 
+#define DRV_ETHPHY_LAN8840_SKEW_SETTING
+#define DRV_ETHPHY_LAN8840_TX_CLK_SKEW       0x12
 
 
 /*** wolfCrypt Library Configuration ***/
@@ -937,6 +940,7 @@ extern "C" {
 #define SINGLE_THREADED
 #define NO_SIG_WRAPPER
 #define NO_ERROR_STRINGS
+#define WOLFSSL_MAX_ERROR_SZ 38 // Fix Mandatory Misra 21.18 caused by removing error strings with defining NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY
 // ---------- FUNCTIONAL CONFIGURATION END ----------
 
