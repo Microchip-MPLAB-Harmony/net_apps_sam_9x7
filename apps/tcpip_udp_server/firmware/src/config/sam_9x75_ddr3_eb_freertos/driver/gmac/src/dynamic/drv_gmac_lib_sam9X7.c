@@ -13,7 +13,7 @@
 *******************************************************************************/
 //DOM-IGNORE-BEGIN
 /*
-Copyright (C) 2008-2023, Microchip Technology Inc., and its subsidiaries. All rights reserved.
+Copyright (C) 2008-2024, Microchip Technology Inc., and its subsidiaries. All rights reserved.
 
 The software and documentation is provided by microchip and its contributors
 "as is" and any express, implied or statutory warranties, including, but not
@@ -44,6 +44,8 @@ Microchip or any third party.
 #define GMAC_RX_STICKY_BUFFERS  1
 #define GMAC_RX_DYNAMIC_BUFFERS 0
 #define GMAC_NCR_MIIONRGMII_Msk (0x10000000)
+
+#define REV16(x) (((x) >> 8U) | ((x) << 8U))
 /******************************************************************************
  * Prototypes
  ******************************************************************************/
@@ -219,7 +221,7 @@ DRV_PIC32CGMAC_RESULT DRV_PIC32CGMAC_LibInitTransfer(DRV_GMAC_DRIVER* pMACDrv,GM
         //dma configuration
         pGmacRegs->GMAC_DCFGR = (GMAC_DCFGR_DRBS_Msk & ((wRxBufferSize_temp >> 6) << GMAC_DCFGR_DRBS_Pos))
                                 | (GMAC_DCFGR_RXBMS_Msk & ((3) << GMAC_DCFGR_RXBMS_Pos)) | GMAC_DCFGR_TXPBMS_Msk  
-                                | GMAC_DCFGR_FBLDO(4) | GMAC_DCFGR_DDRP_Msk;
+                                | GMAC_DCFGR_FBLDO(16) | GMAC_DCFGR_DDRP_Msk;
 
         if((pMACDrv->sGmacData.gmacConfig.checksumOffloadTx) != TCPIP_MAC_CHECKSUM_NONE)
         {
@@ -276,6 +278,7 @@ void DRV_PIC32CGMAC_LibMACOpen(DRV_GMAC_DRIVER * pMACDrv, TCPIP_ETH_OPEN_FLAGS o
 {   
     gmac_registers_t *  pGmacRegs = (gmac_registers_t *) pMACDrv->sGmacData.gmacConfig.ethModuleId;
     uint32_t ncfgr;
+    GMAC_QUE_LIST queueIdx; 
     
     pGmacRegs->GMAC_NCR &= ~GMAC_NCR_TXEN_Msk;
     pGmacRegs->GMAC_NCR &= ~GMAC_NCR_RXEN_Msk;
@@ -332,6 +335,14 @@ void DRV_PIC32CGMAC_LibMACOpen(DRV_GMAC_DRIVER * pMACDrv, TCPIP_ETH_OPEN_FLAGS o
         pGmacRegs->GMAC_UR = (pGmacRegs->GMAC_UR & ~GMAC_UR_MIM_Msk) | GMAC_UR_MIM_RMII;
         pGmacRegs->GMAC_NCFGR &= ~GMAC_NCFGR_GBE_Msk;
     }   
+    
+    // Reset Tx Indexes. After TXEN reset, the Transmit Queue Pointer will point to the start of the
+    // transmit descriptor list.
+    for(queueIdx = GMAC_QUE_0; queueIdx < pMACDrv->sGmacData.gmacConfig.macQueNum; queueIdx++)
+    {
+        // Reset Transmit Indexes
+        DRV_PIC32CGMAC_LibClearTxIndex(pMACDrv, queueIdx);
+    }
     
     pGmacRegs->GMAC_NCR |= GMAC_NCR_RXEN_Msk;
     pGmacRegs->GMAC_NCR |= GMAC_NCR_TXEN_Msk;
@@ -530,36 +541,36 @@ DRV_PIC32CGMAC_RESULT DRV_PIC32CGMAC_LibRxQueFilterInit(DRV_GMAC_DRIVER* pMACDrv
         if(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAEnable == true)
         {
             st2rpq_val |= GMAC_ST2RPQ_COMPAE(1) | GMAC_ST2RPQ_COMPA(comp_index);
-            comp_val = __REVSH(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAValue);
-            comp_mask = __REVSH(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAMask);
-            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW0 = GMAC_ST2CW0_COMPVAL(comp_val) | GMAC_ST2CW0_MASKVAL(comp_mask);
-            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW1 =
-                    GMAC_ST2CW1_OFFSVAL(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAOffset) |
-                    GMAC_ST2CW1_OFFSSTRT(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAOffsetStart);
+            comp_val = REV16(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAValue);
+            comp_mask = REV16(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAMask);
+            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW0R = GMAC_ST2CW0R_COMPVAL(comp_val) | GMAC_ST2CW0R_MASKVAL(comp_mask);
+            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW1R =
+                    GMAC_ST2CW1R_OFFSVAL(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAOffset) |
+                    GMAC_ST2CW1R_OFFSSTRT(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compAOffsetStart);
             comp_index++;
         }
         
         if(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBEnable == true)
         {
             st2rpq_val |= GMAC_ST2RPQ_COMPBE(1) | GMAC_ST2RPQ_COMPB(comp_index);
-            comp_val = __REVSH(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBValue);
-            comp_mask = __REVSH(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBMask);
-            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW0 = GMAC_ST2CW0_COMPVAL(comp_val) | GMAC_ST2CW0_MASKVAL(comp_mask);
-            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW1 =
-                    GMAC_ST2CW1_OFFSVAL(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBOffset) |
-                    GMAC_ST2CW1_OFFSSTRT(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBOffsetStart);
+            comp_val = REV16(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBValue);
+            comp_mask = REV16(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBMask);
+            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW0R = GMAC_ST2CW0R_COMPVAL(comp_val) | GMAC_ST2CW0R_MASKVAL(comp_mask);
+            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW1R =
+                    GMAC_ST2CW1R_OFFSVAL(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBOffset) |
+                    GMAC_ST2CW1R_OFFSSTRT(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compBOffsetStart);
             comp_index++;
         }
         
         if(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCEnable == true)
         {
             st2rpq_val |= GMAC_ST2RPQ_COMPCE(1) | GMAC_ST2RPQ_COMPC(comp_index);
-            comp_val = __REVSH(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCValue);
-            comp_mask = __REVSH(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCMask);
-            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW0 = GMAC_ST2CW0_COMPVAL(comp_val) | GMAC_ST2CW0_MASKVAL(comp_mask);
-            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW1 =
-                    GMAC_ST2CW1_OFFSVAL(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCOffset) |
-                    GMAC_ST2CW1_OFFSSTRT(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCOffsetStart);
+            comp_val = REV16(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCValue);
+            comp_mask = REV16(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCMask);
+            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW0R = GMAC_ST2CW0R_COMPVAL(comp_val) | GMAC_ST2CW0R_MASKVAL(comp_mask);
+            pGmacRegs->GMAC_ST2CW[comp_index].GMAC_ST2CW1R =
+                    GMAC_ST2CW1R_OFFSVAL(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCOffset) |
+                    GMAC_ST2CW1R_OFFSSTRT(pMACDrv->sGmacData.gmacConfig.pRxQueFiltInit->type2FiltInit[type2_idx].compCOffsetStart);
             comp_index++;
         }
         pGmacRegs->GMAC_ST2RPQ[type2_idx] = st2rpq_val;
@@ -1890,7 +1901,17 @@ void DRV_PIC32CGMAC_LibTxEnable(DRV_GMAC_DRIVER* pMACDrv, bool enable)
     }
 }
 
-
+/****************************************************************************
+ * Function:    DRV_PIC32CGMAC_LibClearTxIndex
+ * Summary:     Reset Transmit Processing Indexes
+ *****************************************************************************/
+void  DRV_PIC32CGMAC_LibClearTxIndex(DRV_GMAC_DRIVER* pMACDrv, GMAC_QUE_LIST queueIdx)
+{
+    // Reset Transmit processing indexes. Because, after TXEN reset, the Transmit  
+    // Queue Pointer will point to the start of the transmit descriptor list.
+    pMACDrv->sGmacData.gmac_queue[queueIdx].nTxDescHead = 0;
+    pMACDrv->sGmacData.gmac_queue[queueIdx].nTxDescTail = 0;
+}
 /****************************************************************************
  * Function:        _GetPktSegCount
  * Summary: Counts no. of packet segments in MAC packet
