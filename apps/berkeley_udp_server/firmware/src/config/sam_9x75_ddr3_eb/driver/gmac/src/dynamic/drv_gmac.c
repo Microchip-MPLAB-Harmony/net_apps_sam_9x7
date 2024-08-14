@@ -3,7 +3,7 @@
 *******************************************************************************/
 
 /*
-Copyright (C) 2017-2023, Microchip Technology Inc., and its subsidiaries. All rights reserved.
+Copyright (C) 2017-2024, Microchip Technology Inc., and its subsidiaries. All rights reserved.
 
 The software and documentation is provided by microchip and its contributors
 "as is" and any express, implied or statutory warranties, including, but not
@@ -1569,6 +1569,8 @@ static void _MacTxDiscardQueues(DRV_GMAC_DRIVER * pMACDrv,TCPIP_MAC_PKT_ACK_RES 
             DRV_PIC32CGMAC_LibTxEnable(pMACDrv, false);
             //Acknowledge the TX packets Queued
             DRV_PIC32CGMAC_LibTxAckPendPacket(pMACDrv, queueIdx, ackRes); 
+            // Reset Transmit Indexes
+            DRV_PIC32CGMAC_LibClearTxIndex(pMACDrv, queueIdx);
             // Enable GMAC Transmit
             DRV_PIC32CGMAC_LibTxEnable(pMACDrv, true);            
         }
@@ -1580,6 +1582,8 @@ static void _MacTxDiscardQueues(DRV_GMAC_DRIVER * pMACDrv,TCPIP_MAC_PKT_ACK_RES 
             DRV_PIC32CGMAC_LibTxEnable(pMACDrv, false);
             //Acknowledge the unacknowledged TX packets
             DRV_PIC32CGMAC_LibTxClearUnAckPacket(pMACDrv, queueIdx, ackRes); 
+            // Reset Transmit Indexes
+            DRV_PIC32CGMAC_LibClearTxIndex(pMACDrv, queueIdx);
             // Enable GMAC Transmit
             DRV_PIC32CGMAC_LibTxEnable(pMACDrv, true);     
         }
