@@ -3,7 +3,7 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
-## Network Application Examples for SAM 9X7 Family, v3.2.0
+## Network Application Examples for SAM9X7 Family, v3.2.0
 
 ### New Features
 - Added demo applications for SAM9X75 Curiosity Board.
@@ -41,7 +41,7 @@ This release supports applications for the following development kit.
 
 ---
 
-## Network Application Examples for SAM 9X7 Family, v3.1.0
+## Network Application Examples for SAM9X7 Family, v3.1.0
 
 ### New Features
 - Support for MAC RX/TX Checksum offload feature
@@ -83,7 +83,7 @@ This release supports applications for the following development kit.
 
 ---
 
-## Harmony 3 Network Application Examples for SAM 9X7 Family  v3.0.0
+## Harmony 3 Network Application Examples for SAM9X7 Family  v3.0.0
 The applications demonstrate the typical usage of Harmony 3 TCP/IP Stack on a hardware board with SAM9X75 device.
 - All applications use MCC for configuration.
 - All applications created with TCP/IP Configurator Plugin (beta).
