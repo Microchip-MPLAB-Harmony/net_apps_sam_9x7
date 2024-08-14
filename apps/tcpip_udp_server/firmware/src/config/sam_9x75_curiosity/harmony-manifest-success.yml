@@ -16,7 +16,7 @@ compiler: XC32 4.45
 modules:
     - {name: "csp", version: "v3.19.4"}
     - {name: "core", version: "v3.13.5"}
-    - {name: "net", version: "dev"}
+    - {name: "net", version: "v3.12.2"}
     - {name: "bsp", version: "v3.20.1"}
 
 packs:

@@ -20,5 +20,5 @@ packs: {name: SAM9X7_DFP, version: 1.4.151}
 modules:
 - {name: csp, type: HARMONY, version: v3.19.4}
 - {name: core, type: HARMONY, version: v3.13.5}
-- {name: net, type: HARMONY, version: dev}
+- {name: net, type: HARMONY, version: v3.12.2}
 - {name: bsp, type: HARMONY, version: v3.20.1}

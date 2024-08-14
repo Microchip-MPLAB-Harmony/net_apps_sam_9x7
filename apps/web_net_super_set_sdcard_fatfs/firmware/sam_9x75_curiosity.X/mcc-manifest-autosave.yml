@@ -21,6 +21,6 @@ modules:
 - {name: core, type: HARMONY, version: v3.13.5}
 - {name: csp, type: HARMONY, version: v3.19.4}
 - {name: wolfssl, type: HARMONY, version: v5.4.0}
-- {name: net, type: HARMONY, version: dev}
+- {name: net, type: HARMONY, version: v3.12.2}
 - {name: bsp, type: HARMONY, version: v3.20.1}
 - {name: crypto, type: HARMONY, version: v3.8.2}
