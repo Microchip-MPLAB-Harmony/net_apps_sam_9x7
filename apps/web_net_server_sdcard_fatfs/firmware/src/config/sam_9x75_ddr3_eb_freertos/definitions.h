@@ -83,9 +83,9 @@
 #include "peripheral/sdmmc/plib_sdmmc0.h"
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
-#include "bsp/bsp.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "bsp/bsp.h"
 #include "app.h"
 
 
