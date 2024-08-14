@@ -198,10 +198,8 @@ extern "C" {
 #define HAVE_FFDHE_8192
 #define WOLFSSL_DTLS
 #define NO_PWDBASED
-#define HAVE_TLS_EXTENSIONS
-#define WOLFSSL_TLS13
-#define HAVE_SUPPORTED_CURVES
 #define NO_ERROR_STRINGS
+#define WOLFSSL_MAX_ERROR_SZ 38 // Fix Mandatory Misra 21.18 caused by removing error strings with defining NO_ERROR_STRINGS
 #define NO_OLD_TLS
 
 
@@ -547,6 +545,7 @@ extern "C" {
 #define FREERTOS
 #define NO_SIG_WRAPPER
 #define NO_ERROR_STRINGS
+#define WOLFSSL_MAX_ERROR_SZ 38 // Fix Mandatory Misra 21.18 caused by removing error strings with defining NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY
 // ---------- FUNCTIONAL CONFIGURATION END ----------
 
