@@ -63,12 +63,12 @@
 
 
 /*** Macros for GPIO_PC25 pin ***/
-#define GPIO_PC25_Set()               (PIOC_REGS->PIO_SODR = (1<<25))
-#define GPIO_PC25_Clear()             (PIOC_REGS->PIO_CODR = (1<<25))
-#define GPIO_PC25_Toggle()            (PIOC_REGS->PIO_ODSR ^= (1<<25))
-#define GPIO_PC25_OutputEnable()      (PIOC_REGS->PIO_OER = (1<<25))
-#define GPIO_PC25_InputEnable()       (PIOC_REGS->PIO_ODR = (1<<25))
-#define GPIO_PC25_Get()               ((PIOC_REGS->PIO_PDSR >> 25) & 0x1)
+#define GPIO_PC25_Set()               (PIOC_REGS->PIO_SODR = ((uint32_t)1U<<25U))
+#define GPIO_PC25_Clear()             (PIOC_REGS->PIO_CODR = ((uint32_t)1U<<25U))
+#define GPIO_PC25_Toggle()            (PIOC_REGS->PIO_ODSR ^= ((uint32_t)1U<<25U))
+#define GPIO_PC25_OutputEnable()      (PIOC_REGS->PIO_OER = ((uint32_t)1U<<25U))
+#define GPIO_PC25_InputEnable()       (PIOC_REGS->PIO_ODR = ((uint32_t)1U<<25U))
+#define GPIO_PC25_Get()               ((PIOC_REGS->PIO_PDSR >> 25U) & 0x1U)
 #define GPIO_PC25_PIN                  PIO_PIN_PC25
 
 
