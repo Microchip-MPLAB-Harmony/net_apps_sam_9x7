@@ -350,6 +350,7 @@
             <itemPath>../src/packs/SAM9X75_DFP/component/puf.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/component/csi.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/component/pmerrloc.h</itemPath>
+            <itemPath>../src/packs/SAM9X75_DFP/component/uhpfs.h</itemPath>
           </logicalFolder>
           <logicalFolder name="instance" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/SAM9X75_DFP/instance/flexcom9.h</itemPath>
@@ -419,6 +420,8 @@
             <itemPath>../src/packs/SAM9X75_DFP/instance/tc0.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/csi.h</itemPath>
             <itemPath>../src/packs/SAM9X75_DFP/instance/dsi.h</itemPath>
+            <itemPath>../src/packs/SAM9X75_DFP/instance/uhphs.h</itemPath>
+            <itemPath>../src/packs/SAM9X75_DFP/instance/uhphs_ohci.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/SAM9X75_DFP/pio/sam9x75.h</itemPath>
@@ -586,6 +589,13 @@
       </logicalFolder>
       <itemPath>../src/app.h</itemPath>
       <itemPath>../src/http_net_print.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>web_net_server_sdcard_fatfs.mc3</itemPath>
+      <itemPath>../src/config/sam_9x75_ddr3_eb/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -918,13 +928,6 @@
       <itemPath>../src/custom_http_net_app.c</itemPath>
       <itemPath>../src/http_net_print.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <itemPath>Makefile</itemPath>
-      <itemPath>web_net_server_sdcard_fatfs.mc3</itemPath>
-      <itemPath>../src/config/sam_9x75_ddr3_eb/harmony-manifest-success.yml</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -939,11 +942,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>j32</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.35</languageToolchainVersion>
+        <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAM9X7_DFP" vendor="Microchip" version="1.1.120"/>
+        <pack name="SAM9X7_DFP" vendor="Microchip" version="1.4.151"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
@@ -981,7 +984,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
-        <property key="appendMe" value=""/>
+        <property key="appendMe" value="-marm"/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -1007,6 +1010,7 @@
         <property key="use-cci" value="false"/>
         <property key="use-iar" value="false"/>
         <property key="use-indirect-calls" value="false"/>
+        <appendMe value="-marm"/>
       </C32>
       <C32-AR>
         <property key="additional-options-chop-files" value="false"/>
@@ -1128,6 +1132,9 @@
         <property key="communication.speed" value="4"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="jlink.override" value=""/>
         <property key="lastid" value=""/>
         <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
@@ -1143,13 +1150,16 @@
         <property key="programoptions.eraseb4program" value="false"/>
         <property key="programoptions.preservebootflash" value="false"/>
         <property key="programoptions.preserveprogrammemory" value="false"/>
+        <property key="programoptions.preserveprogrammemory.ranges"
+                  value="0x300000-0xeff00fff"/>
         <property key="programoptions.preserveprogramrange.ranges"
                   value="0x300000-0xeff00fff"/>
-        <property key="programoptions.resetafterprogram" value="true"/>
+        <property key="programoptions.resetafterprogram" value="false"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
+        <property key="x.recover.delay" value="100000"/>
       </Tool>
       <j32>
         <property key="AutoSelectMemRanges" value="auto"/>
@@ -1159,6 +1169,9 @@
         <property key="communication.speed" value="4"/>
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
+        <property key="event.recorder.debugger.behavior" value="Running"/>
+        <property key="event.recorder.enabled" value="false"/>
+        <property key="event.recorder.scvd.files" value=""/>
         <property key="jlink.override" value=""/>
         <property key="lastid" value=""/>
         <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
@@ -1174,13 +1187,14 @@
         <property key="programoptions.eraseb4program" value="false"/>
         <property key="programoptions.preservebootflash" value="false"/>
         <property key="programoptions.preserveprogrammemory" value="false"/>
-        <property key="programoptions.preserveprogramrange.ranges"
+        <property key="programoptions.preserveprogrammemory.ranges"
                   value="0x300000-0xeff00fff"/>
-        <property key="programoptions.resetafterprogram" value="true"/>
+        <property key="programoptions.resetafterprogram" value="false"/>
         <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
+        <property key="x.recover.delay" value="100000"/>
       </j32>
     </conf>
   </confs>
