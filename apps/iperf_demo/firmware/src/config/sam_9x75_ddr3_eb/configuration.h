@@ -252,8 +252,8 @@ extern "C" {
 
 /*** iperf Configuration ***/
 #define TCPIP_STACK_USE_IPERF
-#define TCPIP_IPERF_TX_BUFFER_SIZE		32768
-#define TCPIP_IPERF_RX_BUFFER_SIZE  	32768
+#define TCPIP_IPERF_TX_BUFFER_SIZE		64000
+#define TCPIP_IPERF_RX_BUFFER_SIZE  	64000
 #define TCPIP_IPERF_TX_WAIT_TMO     	100
 #define TCPIP_IPERF_TX_QUEUE_LIMIT  	10
 #define TCPIP_IPERF_TIMING_ERROR_MARGIN 0
@@ -276,7 +276,7 @@ extern "C" {
 
 /*** TCPIP Heap Configuration ***/
 #define TCPIP_STACK_USE_INTERNAL_HEAP
-#define TCPIP_STACK_DRAM_SIZE                       614400
+#define TCPIP_STACK_DRAM_SIZE                       7168000
 #define TCPIP_STACK_DRAM_RUN_LIMIT                  2048
 
 #define TCPIP_STACK_MALLOC_FUNC                     malloc
@@ -339,15 +339,15 @@ extern "C" {
 #define TCPIP_GMAC_RX_BUFF_SIZE_DUMMY            64
 #define TCPIP_GMAC_TX_BUFF_SIZE_DUMMY            64
 /*** QUEUE 0 TX Configuration ***/
-#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0            20
+#define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0            40
 #define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE0                 1536
 /*** QUEUE 0 RX Configuration ***/
-#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0            256
+#define TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0            1024
 #define TCPIP_GMAC_RX_BUFF_SIZE_QUE0                    1536
-#define TCPIP_GMAC_RX_DEDICATED_BUFFERS_QUE0            100
-#define TCPIP_GMAC_RX_ADDL_BUFF_COUNT_QUE0              4
-#define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0         2
-#define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0             3
+#define TCPIP_GMAC_RX_DEDICATED_BUFFERS_QUE0            1024
+#define TCPIP_GMAC_RX_ADDL_BUFF_COUNT_QUE0              128
+#define TCPIP_GMAC_RX_BUFF_COUNT_THRESHOLD_QUE0         64
+#define TCPIP_GMAC_RX_BUFF_ALLOC_COUNT_QUE0             128
 /*** QUEUE 1 Not Enabled - Dummy Configuration ***/
 #define TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE1             TCPIP_GMAC_TX_DESCRIPTORS_COUNT_DUMMY
 #define TCPIP_GMAC_MAX_TX_PKT_SIZE_QUE1                  0
@@ -431,8 +431,8 @@ extern "C" {
 /*** UDP Configuration ***/
 #define TCPIP_UDP_MAX_SOCKETS		                	10
 #define TCPIP_UDP_SOCKET_DEFAULT_TX_SIZE		    	512
-#define TCPIP_UDP_SOCKET_DEFAULT_TX_QUEUE_LIMIT    	 	20
-#define TCPIP_UDP_SOCKET_DEFAULT_RX_QUEUE_LIMIT			20
+#define TCPIP_UDP_SOCKET_DEFAULT_TX_QUEUE_LIMIT    	 	64
+#define TCPIP_UDP_SOCKET_DEFAULT_RX_QUEUE_LIMIT			64
 #define TCPIP_UDP_USE_POOL_BUFFERS   false
 #define TCPIP_UDP_USE_TX_CHECKSUM             			true
 #define TCPIP_UDP_USE_RX_CHECKSUM             			true
@@ -484,6 +484,7 @@ extern "C" {
 #define SINGLE_THREADED
 #define NO_SIG_WRAPPER
 #define NO_ERROR_STRINGS
+#define WOLFSSL_MAX_ERROR_SZ 38 // Fix Mandatory Misra 21.18 caused by removing error strings with defining NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY
 // ---------- FUNCTIONAL CONFIGURATION END ----------
 

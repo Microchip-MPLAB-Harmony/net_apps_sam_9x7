@@ -287,14 +287,14 @@ TCPIP_MODULE_GMAC_QUEUE_CONFIG  gmac_queue_config[DRV_GMAC_NUMBER_OF_QUEUES]=
    {   /** QUEUE 0 Initialization**/
        .queueTxEnable = true,
        .queueRxEnable = true,
-       .nRxDescCnt    = 256,
-       .nTxDescCnt    = 20,
+       .nRxDescCnt    = 1024,
+       .nTxDescCnt    = 40,
        .rxBufferSize  = 1536,
        .txMaxPktSize  = 1536,
-       .nRxDedicatedBuffers   = 100,
-       .nRxAddlBuffCount  = 4,
-       .nRxBuffCntThres   = 2,
-       .nRxBuffAllocCnt   = 3,   
+       .nRxDedicatedBuffers   = 1024,
+       .nRxAddlBuffCount  = 128,
+       .nRxBuffCntThres   = 64,
+       .nRxBuffAllocCnt   = 128,   
        .queueIntSrc       = GMAC_IRQn,                               
    },
    {   /** QUEUE 1 Initialization**/
@@ -375,6 +375,7 @@ const TCPIP_MODULE_MAC_PIC32C_CONFIG tcpipGMACInitData =
        .ethModuleId            = TCPIP_GMAC_MODULE_ID,
        .pPhyBase               = &DRV_ETHPHY_OBJECT_BASE_Default,
        .pPhyInit               = &tcpipPhyInitData_KSZ9131,
+       .macRefClkSrc           = 0,
        .checksumOffloadRx      = DRV_GMAC_RX_CHKSM_OFFLOAD,
        .checksumOffloadTx      = DRV_GMAC_TX_CHKSM_OFFLOAD,
        .macTxPrioNum           = TCPIP_GMAC_TX_PRIO_COUNT,
@@ -405,11 +406,13 @@ const DRV_ETHPHY_INIT tcpipPhyInitData_KSZ9131 =
     .phyAddress             = DRV_KSZ9131_PHY_ADDRESS,
     .phyFlags               = DRV_KSZ9131_PHY_CONFIG_FLAGS,
     .pPhyObject             = &DRV_ETHPHY_OBJECT_KSZ9131,
-    .resetFunction          = AppKSZ9131ResetFunction,
     .ethphyTmo              = &drvksz9131Tmo,
     .pMiimObject            = &DRV_MIIM_OBJECT_BASE_Default,
     .pMiimInit              = &drvMiimInitData_0,
     .miimIndex              = 0,
+
+
+    .resetFunction          = AppKSZ9131ResetFunction,
 };
 
 
