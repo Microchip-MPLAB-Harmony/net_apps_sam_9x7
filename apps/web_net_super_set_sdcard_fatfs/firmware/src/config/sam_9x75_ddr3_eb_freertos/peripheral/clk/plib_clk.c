@@ -96,7 +96,7 @@ static void initPeriphClk(void)
         { ID_FLEXCOM3, 1, 0, 0, 0},
         { ID_SDMMC0, 1, 1, 8, 2},
         { ID_TC0, 1, 0, 0, 0},
-        { ID_GMAC, 1, 1, 6, 0},
+        { ID_GMAC, 1, 1, 8, 0},
         { ID_PIOD, 1, 0, 0, 0},
         { ID_PERIPH_MAX + 1, 0, 0, 0, 0}//end of list marker
     };

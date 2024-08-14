@@ -229,6 +229,7 @@ extern "C" {
 #define WOLFSSL_DTLS
 #define NO_PWDBASED
 #define NO_ERROR_STRINGS
+#define WOLFSSL_MAX_ERROR_SZ 38 // Fix Mandatory Misra 21.18 caused by removing error strings with defining NO_ERROR_STRINGS
 #define NO_OLD_TLS
 
 
@@ -387,16 +388,6 @@ extern "C" {
 
 
 
-/*** FTPC Configuration ***/
-#define TCPIP_STACK_USE_FTP_CLIENT
-#define TCPIP_FTPC_TASK_TICK_RATE        5
-#define TCPIP_FTPC_TMO                   2
-#define TCPIP_FTPC_MAX_NUM_CLIENT        3
-#define TCPIP_FTPC_DATA_SKT_TX_BUFF_SIZE_DFLT        0
-#define TCPIP_FTPC_DATA_SKT_RX_BUFF_SIZE_DFLT        0
-#define TCPIP_FTPC_COMMANDS  
-
-
 /*** iperf Configuration ***/
 #define TCPIP_STACK_USE_IPERF
 #define TCPIP_IPERF_TX_BUFFER_SIZE		4096
@@ -407,6 +398,16 @@ extern "C" {
 #define TCPIP_IPERF_MAX_INSTANCES       1
 #define TCPIP_IPERF_TX_BW_LIMIT  		1
 
+
+
+/*** FTPC Configuration ***/
+#define TCPIP_STACK_USE_FTP_CLIENT
+#define TCPIP_FTPC_TASK_TICK_RATE        5
+#define TCPIP_FTPC_TMO                   2
+#define TCPIP_FTPC_MAX_NUM_CLIENT        3
+#define TCPIP_FTPC_DATA_SKT_TX_BUFF_SIZE_DFLT        0
+#define TCPIP_FTPC_DATA_SKT_RX_BUFF_SIZE_DFLT        0
+#define TCPIP_FTPC_COMMANDS  
 
 
 /*** IPv4 Configuration ***/
@@ -485,11 +486,11 @@ extern "C" {
 
 /* MPLAB Harmony Net Presentation Layer Definitions*/
 #define NET_PRES_NUM_INSTANCE 1
-#define NET_PRES_NUM_SOCKETS 20
+#define NET_PRES_NUM_SOCKETS 10
 
 /* Net Pres RTOS Configurations*/
-#define NET_PRES_RTOS_STACK_SIZE                4096
-#define NET_PRES_RTOS_TASK_PRIORITY             1
+#define NET_PRES_RTOS_STACK_SIZE                8192
+#define NET_PRES_RTOS_TASK_PRIORITY             4
 	
 #define FREERTOS
 
@@ -569,18 +570,12 @@ extern "C" {
 
 
 
-/*** NBNS Configuration ***/
-#define TCPIP_STACK_USE_NBNS
-#define TCPIP_NBNS_TASK_TICK_RATE   110
-
-
-
 /*** HTTP NET Configuration ***/
 #define TCPIP_STACK_USE_HTTP_NET_SERVER
 #define TCPIP_HTTP_NET_MAX_HEADER_LEN		    		15
 #define TCPIP_HTTP_NET_CACHE_LEN		        		"600"
 #define TCPIP_HTTP_NET_TIMEOUT		            		45
-#define TCPIP_HTTP_NET_MAX_CONNECTIONS		    		8
+#define TCPIP_HTTP_NET_MAX_CONNECTIONS		    		4
 #define TCPIP_HTTP_NET_DEFAULT_FILE		        		"index.htm"
 #define TCPIP_HTTP_NET_FILENAME_MAX_LEN			        25
 #define TCPIP_HTTP_NET_WEB_DIR		        		    "/mnt/mchpSite1/"
@@ -621,6 +616,12 @@ extern "C" {
 #define TCPIP_HTTP_NET_MALLOC_FUNC                  pvPortMalloc
 #define TCPIP_HTTP_NET_FREE_FUNC                    vPortFree
 #define TCPIP_HTTP_NET_CONSOLE_CMD           		true
+
+
+
+/*** NBNS Configuration ***/
+#define TCPIP_STACK_USE_NBNS
+#define TCPIP_NBNS_TASK_TICK_RATE   110
 
 
 
@@ -768,7 +769,7 @@ extern "C" {
 
 /* TCP/IP RTOS Configurations*/
 #define TCPIP_RTOS_STACK_SIZE                1024
-#define TCPIP_RTOS_PRIORITY             1
+#define TCPIP_RTOS_PRIORITY             3
 
 
 /*** GMAC Configuration ***/
@@ -943,6 +944,7 @@ extern "C" {
 #define FREERTOS
 #define NO_SIG_WRAPPER
 #define NO_ERROR_STRINGS
+#define WOLFSSL_MAX_ERROR_SZ 38 // Fix Mandatory Misra 21.18 caused by removing error strings with defining NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY
 // ---------- FUNCTIONAL CONFIGURATION END ----------
 
