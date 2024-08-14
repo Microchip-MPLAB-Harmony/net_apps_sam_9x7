@@ -15,7 +15,7 @@
 - Updated demo documentation and included SAM9X75 Curiosity.
 
 ### Known Issues
-- IPERF throughput reduces when programmed the board with PICkit5/ICD5. Please use sdcard boot method until this issue is fixed.
+- Performance degradation when programmed the board with PICkit5/ICD5. Please use sdcard boot method until this issue is fixed.
 
 ### Development Tools
 
