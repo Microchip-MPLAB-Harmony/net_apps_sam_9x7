@@ -325,6 +325,7 @@ void APP_SslText_Tasks(IP_ADDRESS_TYPE ipType, NET_PRES_SKT_HANDLE_T * socket, A
 
 }
 
+#ifndef sam_9x75_curiosity
 void AppKSZ9131ResetFunction(const struct DRV_ETHPHY_OBJECT_BASE_TYPE* pBaseObj, DRV_HANDLE handle)
 {
 
@@ -342,6 +343,7 @@ void AppKSZ9131ResetFunction(const struct DRV_ETHPHY_OBJECT_BASE_TYPE* pBaseObj,
     }
 
 }
+#endif
 /*******************************************************************************
  End of File
  */
