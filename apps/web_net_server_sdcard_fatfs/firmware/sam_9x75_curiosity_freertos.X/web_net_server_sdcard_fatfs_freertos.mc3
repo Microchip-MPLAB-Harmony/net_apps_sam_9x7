@@ -203,7 +203,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.2"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.5.3"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -20467,11 +20467,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\driver\ethphy\src\dynamic\drv_extphy_lan8840.c</file>
-         <hash>7aa8d5039703f4b48d1dbade4d0b743441d2e269c3a65d09884e08e3798ea55c</hash>
+         <hash>3dc3b9b4ccd221eb9f7cf7940ea201c09a5890166ef2922b8764158689da7e58</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\driver\ethphy\src\dynamic\drv_extphy_lan8840.h</file>
-         <hash>1f20962a81e08c185696b3dfb2a556daef6697aad55f1f62431728ca782e25b1</hash>
+         <hash>32f9110b95d7f3929cb9f108284a5f03caaa9db8c89be76ea6c440ec0670fe59</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\driver\ethphy\src\dynamic\drv_extphy_regs.h</file>
@@ -20491,7 +20491,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\driver\gmac\src\dynamic\drv_gmac.c</file>
-         <hash>472125984ec5d3df9ebceb928288d84ab68aec390834c8cfa4898561565bd04b</hash>
+         <hash>de39e85812083898dc20722bd18a52224887a4c9c065736bf96621d7bceb6bc3</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\driver\gmac\src\dynamic\drv_gmac_lib.h</file>
@@ -20643,7 +20643,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\ipv6.h</file>
-         <hash>a4748496db76d2c0fca2fc462666e934bc8067b496fcdc46a5b2f43b0be90f1f</hash>
+         <hash>b675c4df60b778005ba0cde22d44a25d8baf0991f631747d9f377830f0271f1f</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\lldp.h</file>
@@ -20855,7 +20855,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\ipv6.c</file>
-         <hash>cfb973894177e23fdcdef1d801e878157603b33b649e5d47864801cea237b97e</hash>
+         <hash>8c73e8c60751468a6ee203f6ba3df9b9d5f5af3d1f69594d8fbf745a28cc126e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\ipv6_manager.h</file>
@@ -20947,7 +20947,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\tcp.c</file>
-         <hash>d634f61a2796c02927a61e43312b0d94503b3988d4218d2f993f6ed45fd0e9b1</hash>
+         <hash>5da6c25e7d7f3076b82e1082400aa5fa7a5a18650d243cdb39a2b6817c42e5b2</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\tcp_manager.h</file>
@@ -21023,7 +21023,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\tcpip_packet.c</file>
-         <hash>e0414e6148ed6f2f36c57a2c1e91c7d1a1c668e1a9d0ce45680c28e83ee759e3</hash>
+         <hash>6f9a50bfdd735e8e453a41e4f10040efac9fd505335197c237d369de0fa496a2</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\tcpip_packet.h</file>
@@ -21063,7 +21063,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\udp.c</file>
-         <hash>86f5c342bb780dbb897afc351707a7c0cc96a56559b884fe4b5bb7dde466d431</hash>
+         <hash>9479edef57387aff0635891b4b1580e79225c4f529b6dfa2045361ccd401c6cd</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\src\udp_manager.h</file>
@@ -21119,7 +21119,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\tcpip_mac.h</file>
-         <hash>9622e737678d0333a496018e8d4191762002c8550528d681e1b85d21b53b873b</hash>
+         <hash>7137ed6478803b511ada20f717583d7168e680c784b6d6c42dbaa75e4b928ea1</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_9x75_curiosity_freertos\library\tcpip\tcpip_mac_bridge.h</file>
