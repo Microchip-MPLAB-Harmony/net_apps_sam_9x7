@@ -958,7 +958,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAM9X7_DFP" vendor="Microchip" version="1.4.151"/>
+        <pack name="SAM9X7_DFP" vendor="Microchip" version="1.6.161"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
