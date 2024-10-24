@@ -1,20 +1,20 @@
 package:
   format-version: "1.0.0"
   name: "net_apps_sam_9x7"
-  version: "v3.2.0"
+  version: "v3.3.0"
   type: "application"
   status: "production"
   
   dependencies:
     - name: "net"
       type: "package"
-      version: "v3.12.2"
+      version: "v3.12.3"
     - name: "core"
       type: "package"
       version: "v3.13.5"
     - name: "csp"
       type: "package"
-      version: "v3.19.4"
+      version: "v3.19.6"
     - name: "bsp"
       type: "package"
       version: "v3.20.1"
