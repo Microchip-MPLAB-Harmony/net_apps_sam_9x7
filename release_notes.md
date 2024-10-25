@@ -3,6 +3,41 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Network Application Examples for SAM9X7 Family, v3.3.0
+
+### New Features
+- Added demo applications for SAM9X75 Curiosity Board.
+
+### Improvements and Bug Fixes
+- Updated demo documentation.
+
+### Known Issues
+- Performance degradation when programmed the board with PICkit5/ICD5. Please use sdcard boot method until this issue is fixed.
+
+### Development Tools
+
+- [MPLAB® X IDE, v6.20](https://www.microchip.com/mplab/mplab-x-ide) or later
+- [MPLAB® XC32 C/C++ Compiler, v4.45](https://www.microchip.com/mplab/compilers) or later
+- [MPLAB® Code Configurator(MCC) Plugin, v5.5.1](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator) or later
+- [MPLAB® Harmony v3 net repository, v3.12.3](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.12.3)
+- [MPLAB® Harmony v3 net\_apps\_sam\_9x7 demo apps repository, v3.3.0](https://github.com/Microchip-MPLAB-Harmony/net_apps_sam_9x7/tree/v3.3.0)
+
+### Development Kit Support
+
+This release supports applications for the following development kit.
+
+| Development Kits |
+| --- |
+| [SAM9X75-DDR3-EB](https://www.microchip.com/en-us/development-tool/EA14J50A) |
+| [SAM9X75-Curiosity](https://www.microchip.com/en-us/development-tool/EV31H43A) |
+
+
+## Net Release Notes
+
+- See the [Net 3.12.3 Release Notes](https://github.com/Microchip-MPLAB-Harmony/net/tree/v3.12.3)
+
+---
+
 ## Network Application Examples for SAM9X7 Family, v3.2.0
 
 ### New Features
